@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "name": "Website Goiânia Fashion Week",
+  "launch_path": "/index.html",
+  "description": "Website da agência de modelos GFW, com o propósito principal de divulgação da empresa.",
+  "icons": {
+    "310": "img/touch/ms-icon-310x310.png"
+  },
+  "developer": {
+    "name": "Alef Barbeli",
+    "url": "acidmkt.xyz"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "pt-br",
+  "permissions": {
+  },
+  "locales": {
+    "pt-br": {
+      "name": "Website Goiânia Fashion Week",
+      "description": "Website da agência de modelos GFW, com o propósito principal de divulgação da empresa."
+    }
+  }
+}
