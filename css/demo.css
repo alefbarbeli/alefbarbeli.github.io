@@ -25,6 +25,29 @@ body {
     font-style: normal;
 }
 
+.text-center {
+    text-align: center!important;
+}
+h2{
+    font-size: 2rem;
+}
+h2.section-heading{
+
+}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid white;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.music {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
 /* Buttons */
 
 .btn {
@@ -75,7 +98,7 @@ a {
 	color: #695E59;
 	outline: none;
 }
-.demo-2 .trigger-headline { color: #695E59; font-weight: 100; }
+.demo-2 .trigger-headline { color: #fff; font-weight: 100; }
 
 .hidden {
 	position: absolute;
@@ -138,6 +161,7 @@ a {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	z-index: 9;
 }
 
 
@@ -267,7 +291,6 @@ a {
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-    text-shadow: 0.02em 0.02em 0.02em white;
 }
 
 .trigger-headline span {
@@ -405,7 +428,7 @@ a {
 
 @media screen and (max-width:60em) {
 	.codrops-demos {
-		margin-bottom: 4em;
+		margin-bottom: 0em;
 		text-align: center;
 	}
 }
