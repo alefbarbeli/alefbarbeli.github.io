@@ -14,8 +14,7 @@
                 slideSpeed: 300,
                 autoplay: true,
                 autoHeight: true,
-                pagination: true,
-                paginationSpeed: 300,
+                pagination: false,
                 singleItem: true,
                 transitionStyle: "fade"
             });

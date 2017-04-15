@@ -169,6 +169,7 @@ ul, ol {
 .navigation li a:hover{color:#fff;}
 .navigation .current a{color:#fff;}
 .for-sticky {
+    background: #180E29 none repeat scroll 0 0;
     top: 0;
     left: 0;
     padding: 10px 0;
@@ -179,26 +180,6 @@ ul, ol {
 	-moz-transition: ease .3s;
 	-o-transition: ease .3s;
 	-ms-transition: ease .3s;
-}
-.is-sticky .for-sticky {
-    background: #180E29 none repeat scroll 0 0;
-}
-
-.is-sticky .logo1 {
-    display: block;
-    transition: ease .3s;
-    -webkit-transition: ease .3s;
-    -moz-transition: ease .3s;
-    -o-transition: ease .3s;
-    -ms-transition: ease .3s;
-}
-
-.logo1 {
-    display: none;
-    -webkit-transition: ease .3s;
-    -moz-transition: ease .3s;
-    -o-transition: ease .3s;
-    -ms-transition: ease .3s;
 }
 
 .box-mobile {
