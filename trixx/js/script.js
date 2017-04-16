@@ -53,10 +53,10 @@
                 scrollTop: $(window.location.hash).offset().top - menuheigt
             }, 300, 'linear');
         }
-
+        //AIzaSyDdCWrkHL8aNAJepyvA5Lkr91RNhS0RNEQ
         //google map load
         $('#map_canvas').gmap({
-            'center': '-6.94010,107.62575',
+            'center': '-23.561414,-46.6580706',
             'zoom': 15,
             scrollwheel: false,
             'disableDefaultUI': false,
