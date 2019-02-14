@@ -21,22 +21,16 @@ $(function () {
 	
 	/* Preloader */
 	$(window).load(function() {
-		$(".preloader .pre-inner").fadeOut(800, function(){
-			/* Preload hide */
-			$('.preloader').fadeOut();
-			$('body').addClass('loaded');
-			
-			/* Typed subtitle */
-			$('.typed-subtitle').typed({
-				stringsElement: $('.typing-subtitle'),
-				loop: true
-			});
-			
-			/* Typed breadcrumbs */
-			$('.typed-bread').typed({
-				stringsElement: $('.typing-bread'),
-				showCursor: false
-			});
+		/* Typed subtitle */
+		$('.typed-subtitle').typed({
+			stringsElement: $('.typing-subtitle'),
+			loop: true
+		});
+		
+		/* Typed breadcrumbs */
+		$('.typed-bread').typed({
+			stringsElement: $('.typing-bread'),
+			showCursor: false
 		});
 	});
 	
