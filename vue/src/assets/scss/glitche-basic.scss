@@ -31,6 +31,8 @@
   15. Animations
 */
 
+$color-primary: #26b9ea;
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .25s;
 }
@@ -100,8 +102,50 @@ body.loaded .section {
   left: 0;
 
   background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(-45deg, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 7s ease infinite;
+	-moz-animation: Gradient 7s ease infinite;
+	animation: Gradient 7s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 @media (max-width: 840px) {
@@ -114,7 +158,7 @@ body.loaded .section {
 .container .line {
   content: '';
   position: fixed;
-  background: #e84a5f;
+  background: $color-primary;
   z-index: 105;
 }
 
@@ -297,7 +341,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #e84a5f;
+  color: $color-primary;
 }
 
 /* 6. Buttons */
@@ -325,15 +369,15 @@ a.btn,
 a.btn.fill,
 .btn.fill {
   color: #ffffff;
-  background: #e84a5f;
-  border: 1px solid #e84a5f;
+  background: $color-primary;
+  border: 1px solid $color-primary;
 }
 
 a.btn:hover,
 .btn:hover {
   color: #ffffff;
-  background: #e84a5f;
-  border: 1px solid #e84a5f;
+  background: $color-primary;
+  border: 1px solid $color-primary;
 }
 
 /* 7. Preloader */
@@ -348,13 +392,13 @@ a.btn:hover,
 }
 
 .preloader .load {
-  color: #e84a5f;
+  color: $color-primary;
   font-size: 12px;
 }
 
 .preloader .typed-load,
 .preloader .typed-cursor {
-  color: #e84a5f;
+  color: $color-primary;
   font-size: 12px;
 }
 
@@ -390,7 +434,7 @@ input:focus,
 textarea:focus,
 button:focus {
   color: #141414;
-  border-bottom: 1px solid #e84a5f;
+  border-bottom: 1px solid $color-primary;
 }
 
 textarea {
@@ -410,7 +454,7 @@ button {
 }
 
 button:hover {
-  border-bottom: 1px solid #e84a5f;
+  border-bottom: 1px solid $color-primary;
 }
 
 label,
@@ -650,20 +694,20 @@ blockquote {
 
   .glitch-effect-white:before,
   .glitch-effect-white:after {
-    background: #e84a5f;
+    background: $color-primary;
   }
 
   .glitch-effect:after,
   .glitch-effect-white:after {
     left: 2px;
-    text-shadow: -1px 0 #e84a5f;
+    text-shadow: -1px 0 $color-primary;
     animation: glitch-1 2s infinite linear alternate-reverse;
   }
 
   .glitch-effect:before,
   .glitch-effect-white:before {
     left: -2px;
-    text-shadow: 2px 0 #e84a5f;
+    text-shadow: 2px 0 $color-primary;
     animation: glitch-2 2s infinite linear alternate-reverse;
   }
 
