@@ -45,7 +45,7 @@
                         setTimeout(function () {
                             app = '';
                             typingEffect();
-                        }, (isReverse) ? 1000 : 150);
+                        }, (isReverse) ? 2000 : 150);
                     }
 
                 }
