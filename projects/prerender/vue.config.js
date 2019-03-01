@@ -3,7 +3,10 @@ module.exports = {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
-        '/'
+        '/',
+        '/portfolio',
+        '/resume',
+        '/contato'
       ],
       useRenderEvent: true,
       headless: true,
