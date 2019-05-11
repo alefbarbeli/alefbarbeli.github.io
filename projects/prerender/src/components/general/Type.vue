@@ -61,9 +61,11 @@
 
 <style scoped>
     p{
-        font-size: 1.4rem;
-        line-height: 2.5rem;
-        height: 2.5rem;
+        color: #000;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        height: 30px;
         padding: 0;
     }
 </style>

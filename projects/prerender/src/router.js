@@ -9,8 +9,8 @@ import Contato from './views/Contato.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
+  // mode: 'history',
+  // base: process.env.BASE_URL,
   routes: [
     {
       path: '/',

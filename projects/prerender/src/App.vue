@@ -45,8 +45,9 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/scss/animate.scss';
+@import 'src/assets/scss/animate.scss';
 @import 'src/assets/scss/glitche-basic.scss';
 @import 'src/assets/scss/glitche-layout.scss';
-// @import 'src/assets/scss/ionicons.scss';
+@import 'src/assets/scss/ionicons.scss';
 @import 'src/assets/scss/magnific-popup.scss';
 </style>
