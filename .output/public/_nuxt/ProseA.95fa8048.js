@@ -1,0 +1,1 @@
+import{M as r,$ as n,ac as o,a3 as s,a5 as f,at as c}from"./defu.cc9aee9f.js";const _=r({__name:"ProseA",props:{href:{type:String,default:""},target:{type:String,default:void 0,required:!1}},setup(e){return(t,u)=>{const a=f;return n(),o(a,{href:e.href,target:e.target},{default:s(()=>[c(t.$slots,"default")]),_:3},8,["href","target"])}}});export{_ as default};
