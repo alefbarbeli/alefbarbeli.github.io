@@ -23,7 +23,7 @@
                     <div class="title_inner">Sobre mim</div>
                 </div>
                 <div class="image">
-                    <img src="images/man1.jpg" alt="" />
+                    <img src="assets/images/man1.jpg" alt="" />
                 </div>
                 <div class="desc">
                     <p>
