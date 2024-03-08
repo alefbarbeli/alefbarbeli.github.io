@@ -1,12 +1,12 @@
 const About = () => {
-  return (
+    return (
     <div className="section about section_" id="section-resume">
       <div className="content">
         <div className="title">
           <div className="title_inner">About Me</div>
         </div>
         <div className="image">
-          <img src="images/man1.jpg" alt="" />
+          <img src="images/profile.jpeg" alt="Alef Barbeli" />
         </div>
         <div className="desc">
           <p>
@@ -40,7 +40,7 @@ const About = () => {
             </ul>
           </div>
           <div className="bts">
-            <a href="#" className="btn fill" data-text="Download CV">
+            <a href="/media/resume.pdf" about="_blank" className="btn fill" data-text="Download CV">
               Download CV
             </a>
           </div>

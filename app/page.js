@@ -1,8 +1,9 @@
 import Hero from "@/components/Hero";
 import GlitcheLayout from "@/layouts/GlitcheLayout";
+import "@css/template-dark/dark.css";
 const page = () => {
   return (
-    <GlitcheLayout>
+    <GlitcheLayout dark={true}>
       <Hero />
     </GlitcheLayout>
   );

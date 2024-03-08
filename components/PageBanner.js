@@ -6,7 +6,6 @@ const PageBanner = ({ pageName, pageLink, dark }) => {
   useEffect(() => {
     var sections = document.querySelectorAll(".section");
     sections.forEach(function (section) {
-      console.log(section);
       section.addEventListener("click", function (event) {
         if (event.target.classList.contains("mouse")) {
           var height = window.innerHeight;
