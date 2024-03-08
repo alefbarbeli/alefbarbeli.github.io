@@ -2,7 +2,7 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-const Blog = ({ dark }) => {
+const Blog = () => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -99,7 +99,7 @@ const Blog = ({ dark }) => {
           {blogs.map((blog) => (
             <div className="box-item" key={blog.id}>
               <div className="image">
-                <Link href={`blog_inner${dark ? "-dark" : ""}`}>
+                <Link href="blog_inner">
                   <img src={blog.img} alt />
                   <span className="info">
                     <span className="centrize full-width">
@@ -113,7 +113,7 @@ const Blog = ({ dark }) => {
               <div className="desc">
                 <div className="date">{blog.date}</div>
                 <Link
-                  href={`blog_inner${dark ? "-dark" : ""}`}
+                  href="blog_inner"
                   className="name"
                 >
                   {blog.title}

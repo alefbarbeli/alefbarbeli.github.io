@@ -3,6 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import GlitcheLayout from "@/layouts/GlitcheLayout";
+import "@css/template-dark/dark.css";
 
 import dynamic from "next/dynamic";
 const Clients = dynamic(() => import("@/components/Clients"), {
@@ -12,7 +13,7 @@ const Clients = dynamic(() => import("@/components/Clients"), {
 const Resume = () => {
   return (
     <GlitcheLayout>
-      <PageBanner pageLink={"resume"} pageName={"Resume"} />
+      <PageBanner pageLink={"resume-dark"} pageName={"Resume"} />
       <About />
       <Skills />
       <Services />

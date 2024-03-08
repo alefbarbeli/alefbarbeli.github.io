@@ -3,7 +3,7 @@ import GlitcheLayout from "@/layouts/GlitcheLayout";
 import "@css/template-dark/dark.css";
 const page = () => {
   return (
-    <GlitcheLayout dark={true}>
+    <GlitcheLayout>
       <Hero />
     </GlitcheLayout>
   );

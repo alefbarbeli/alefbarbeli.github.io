@@ -1,4 +1,5 @@
 import GlitcheLayout from "@/layouts/GlitcheLayout";
+import "@css/template-dark/dark.css";
 import Link from "next/link";
 const BlogInner = () => {
   return (
@@ -13,7 +14,8 @@ const BlogInner = () => {
               </div>
               <div className="h-subtitle typing-bread">
                 <p>
-                  <Link href="/">Home</Link> / <Link href="blog">Blog</Link>
+                  <Link href="/index-dark">Home</Link> /{" "}
+                  <Link href="blog-dark">Blog</Link>
                 </p>
               </div>
               <span className="typed-bread" />

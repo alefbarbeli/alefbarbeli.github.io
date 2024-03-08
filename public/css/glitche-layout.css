@@ -157,7 +157,7 @@ header .head-top .menu-btn:hover span {
 }
 
 header .head-top .top-menu ul li {
-  margin-left: 50px;
+  margin-left: 10px;
   display: inline-block;
   vertical-align: top;
   transition: color 0.3s ease 0s;
@@ -169,7 +169,16 @@ header .head-top .top-menu ul li {
 
 header .head-top .top-menu ul li a {
   display: block;
-  margin-top: 12px;
+  height: 3rem;
+  line-height: calc(3rem - 2px);
+  padding: 0 20px;
+}
+
+header .head-top .top-menu ul li a span {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
 }
 
 header .head-top .top-menu ul li a.btn {

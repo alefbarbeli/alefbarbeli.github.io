@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-const PageBanner = ({ pageName, pageLink, dark }) => {
+const PageBanner = ({ pageName, pageLink }) => {
   useEffect(() => {
     var sections = document.querySelectorAll(".section");
     sections.forEach(function (section) {
@@ -36,7 +36,7 @@ const PageBanner = ({ pageName, pageLink, dark }) => {
             </div>
             <div className="h-subtitle typing-bread">
               <p>
-                <Link href={`/${dark ? "index-dark" : ""}`}>Home</Link> /{" "}
+                <Link href={`/`}>Home</Link> /{" "}
                 <Link href={pageLink}>{pageName}</Link>
               </p>
             </div>

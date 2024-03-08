@@ -9,33 +9,26 @@ const About = () => {
           <img src="images/profile.jpeg" alt="Alef Barbeli" />
         </div>
         <div className="desc">
-          <p>
-            Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum
-            vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel
-            te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire
-            suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique
-            ut. Te cule tation munere noluisse. Enim torquatos ne pri, eum
-            mollis salutandi corrumpit et, fugit apeirian duo ad.
-          </p>
+          <p>A Front-end Engineer and Vue specialist with 6+ years of experience building web apps with cutting-edge technologies like Nuxt, Typescript, GraphQL, Tailwind CSS and more.</p>
+          <p>Strongly experienced in e-commerce environment, I've already worked with different platforms like Magento 1 and 2, Commercetools, Prestashop, SAP Commerce, Oracle Commerce Cloud and Vtex.</p>
+          <p>Currently based in São Paulo/ Brasil, with proficient English communication and writing. I'm open and willing to relocate - traveling and connecting to new cultures and people is my major passion.</p>
+          <p>I love Open Source projects and working with fast-paced teams. Curious and creative people are what inspire me the most.</p>
           <div className="info-list">
             <ul>
               <li>
-                <strong>Name:</strong> John Doe
+                <strong>Name:</strong> Alef Barbeli de Lima
               </li>
               <li>
-                <strong>Age:</strong> 22 Years
+                <strong>Age:</strong> 30 Years
               </li>
               <li>
-                <strong>Job:</strong> Web Developer
+                <strong>Job:</strong> FrontEnd Engineer
               </li>
               <li>
-                <strong>Citizenship:</strong> Ukraine
+                <strong>City:</strong> São Paulo/ Brasil
               </li>
               <li>
-                <strong>Residence: </strong> Kiev
-              </li>
-              <li>
-                <strong>E-mail:</strong> johndoe@domain.com
+                <strong>E-mail:</strong> alefbarbeli@gmail.com
               </li>
             </ul>
           </div>

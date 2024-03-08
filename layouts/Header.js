@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ThemeToggler from "@/components/ThemeToggler";
 
-const Header = ({ dark }) => {
+const Header = () => {
   const [toggle, setToggle] = useState(false);
   const onClick = (e) => {
     e.preventDefault();
@@ -23,24 +24,27 @@ const Header = ({ dark }) => {
         <div className="top-menu">
           <ul>
             <li className={pathname.includes("index") || pathname == '/' ? "active" : ""}>
-              <Link href={`index${dark ? "-dark" : ""}`} className={`lnk`}>
+              <Link href="/" className={`lnk`}>
                 Home
               </Link>
             </li>
             <li className={pathname.includes("resume") ? "active" : ""}>
-              <Link href={`resume${dark ? "-dark" : ""}`} className={`lnk`}>
+              <Link href="resume" className={`lnk`}>
                 Resume
               </Link>
             </li>
             <li className={pathname.includes("portfolio") ? "active" : ""}>
-              <Link href={`portfolio${dark ? "-dark" : ""}`} className="lnk">
+              <Link href="portfolio" className="lnk">
                 Portfolio
               </Link>
             </li>
             <li className={pathname.includes("contacts") ? "active" : ""}>
-              <Link href={`contacts${dark ? "-dark" : ""}`} className="btn">
+              <Link href="contacts" className="btn">
                 Contacts
               </Link>
+            </li>
+            <li>
+              <ThemeToggler />
             </li>
           </ul>
         </div>
