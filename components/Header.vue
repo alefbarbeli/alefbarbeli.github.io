@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="head-top">
-            <a href="#" class="menu-btn"><span></span></a>
+            <a href="#" class="menu-btn" aria-label="Toggle menu">
+                <span></span>
+            </a>
             <div class="top-menu">
                 <ul>
                     <li><NuxtLink to="/" class="lnk">Home</NuxtLink></li>

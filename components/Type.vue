@@ -6,7 +6,7 @@
     const props = defineProps({
         items: Array
     })
-    const typing = ref('loading');
+    const typing = ref(props.items[0]);
 
     const onInit = () => {
         let items = props.items;
@@ -19,8 +19,8 @@
         let isReverse = false;
 
         function typingEffect() {
-            typing.value = app;   
-            
+            typing.value = app;
+
             let text = items[index];
             if (count <= text.length) {
                 setTimeout(function () {
@@ -42,10 +42,11 @@
                     typingEffect();
                 }, (isReverse) ? 2000 : 150);
             }
-
         }
 
-        return typingEffect();
+        setTimeout(() => {
+            typingEffect();
+        }, 1000); // Adjust the delay time in milliseconds as needed
     }
 
     onMounted(() => {
