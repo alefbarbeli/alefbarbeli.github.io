@@ -1,9 +1,9 @@
 node_modules
 *.log*
 .nuxt
-/.output
 .nitro
-/.idea
+.idea
 .cache
 .env
 dist
+/.output/

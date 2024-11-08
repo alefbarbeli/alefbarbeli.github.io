@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Share Tech Mono': true
-    }
+    },
+    outputDir: 'assets'
   },
   app: {
     head: {
