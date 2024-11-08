@@ -161,7 +161,7 @@ header .head-top .menu-btn:hover span {
   header .head-top .top-menu {
     opacity: 0;
     visibility: hidden;
-    height: 0px;
+    height: 0;
     transition: opacity 0.3s ease 0.5s;
     -moz-transition: opacity 0.3s ease 0.5s;
     -webkit-transition: opacity 0.3s ease 0.5s;
@@ -349,7 +349,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .section.started .mouse_btn .ion {
   position: relative;
-  top: 0px;
+  top: 0;
   animation: mouse-anim 1s ease-out 0s infinite;
 }
 
@@ -466,7 +466,7 @@ header .head-top .top-menu ul li.active .btn {
 
 @media (max-width: 840px) {
   .resume-items .resume-item {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
 }
@@ -560,7 +560,7 @@ header .head-top .top-menu ul li.active .btn {
   top: 0;
   position: absolute;
   height: 3px;
-  width: 0%;
+  width: 0;
   background: $color-primary;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -1097,6 +1097,5 @@ footer .copy {
   font-weight: 300;
   color: #ffffff;
   font-size: 24px;
-  font-family: 'Verdana' !important;
 }
 
