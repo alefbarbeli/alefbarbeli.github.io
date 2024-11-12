@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="mouse_btn"><span class="ion ion-mouse"></span></a>
+          <a class="mouse_btn" href="#" aria-label="Scroll down"><span class="ion ion-mouse"></span></a>
         </div>
 
         <!-- About -->
@@ -221,3 +221,5 @@
         </div>
     </div>
 </template>
+<script setup lang="ts">
+</script>

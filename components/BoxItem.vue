@@ -1,8 +1,8 @@
 <template>
   <div class="box-item f-code">
     <div class="image">
-      <a class="has-popup" href="#popup-1">
-        <img alt="" src="@/assets/images/works/work1.jpg"/>
+      <a class="has-popup" href="#popup-1" aria-label="Open popup for Vue.js + Rest API + Headless CMS">
+        <img alt="Work 1" src="@/assets/images/works/work1.jpg"/>
         <span class="info">
           <span class="centrize full-width">
             <span class="vertical-center">
@@ -14,12 +14,12 @@
     </div>
     <div class="desc">
       <div class="category">Code</div>
-      <a class="name has-popup" href="#popup-1">Vue.js + Rest API + Headless CMS</a>
+      <a class="name has-popup" href="#popup-1" aria-label="Open popup for Vue.js + Rest API + Headless CMS">Vue.js + Rest API + Headless CMS</a>
     </div>
     <div id="popup-1" class="popup-box mfp-fade mfp-hide">
       <div class="content">
         <div class="image">
-          <img alt="" src="@/assets/images/works/work1.jpg">
+          <img alt="Work 1" src="@/assets/images/works/work1.jpg">
         </div>
         <div class="desc">
           <div class="category">Mockups</div>
@@ -29,7 +29,7 @@
             mutat vituperata
             suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
           </p>
-          <a class="btn" data-text="View Project" href="#">View Project</a>
+          <a class="btn" data-text="View Project" href="#" aria-label="View Project">View Project</a>
         </div>
       </div>
     </div>
