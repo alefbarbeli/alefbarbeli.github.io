@@ -228,6 +228,24 @@ header .head-top .top-menu ul li.active .btn {
 
 .section .content {
   position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media (min-width: 768px) {
+   max-width: 768px;
+  }
+  @media (min-width: 1024px) {
+   max-width: 1024px;
+  }
+  @media (min-width: 1280px) {
+   max-width: 1280px;
+  }
+  //@media (min-width: 1536px) {
+   //max-width: 1536px;
+  //}
 }
 
 .section .content .title {
@@ -239,7 +257,6 @@ header .head-top .top-menu ul li.active .btn {
   .section .content .title {
     text-align: center;
   }
-
 }
 
 .section .content .title .title_inner {
@@ -249,7 +266,7 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
   line-height: 18px;
   font-size: 13px;
-  color: #141414;
+  color: #f1f1f1;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.3s ease 0s;
@@ -279,10 +296,11 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
 }
 
+
 .section.started .started-content .h-title {
   font-size: 80px;
   font-family: 'Share Tech Mono', monospace;
-  color: #141414;
+  color: #f1f1f1;
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: 0.04em;
@@ -520,7 +538,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .resume-items .resume-item .name {
   font-weight: 500;
-  color: #141414;
+  color: #f1f1f1;
   margin: 0 0 15px 0;
 }
 
@@ -648,7 +666,7 @@ header .head-top .top-menu ul li.active .btn {
 .service-items .service-item .name {
   font-weight: 500;
   font-size: 13px;
-  color: #141414;
+  color: #f1f1f1;
   margin: 6px 0 0 46px;
 }
 
@@ -914,7 +932,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .post-comments .post-comment .desc .name {
   font-size: 13px;
-  color: #141414;
+  color: #f1f1f1;
   text-transform: uppercase;
   font-weight: 500;
   padding: 5px 0 0 0;

@@ -37,7 +37,7 @@ useSeoMeta({
   overflow: auto;
   position: fixed;
   z-index: 4;
-  background-color: #7f7f7f;
+  background-color: #3e3e3e;
   top: 3rem;
   left: 3rem;
   width: calc(100% - 6rem);
@@ -49,7 +49,6 @@ useSeoMeta({
 }
 
 .container {
-  font-size: 1.4rem;
   position: relative;
   margin: 3rem;
   overflow: hidden;

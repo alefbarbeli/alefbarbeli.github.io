@@ -7,7 +7,8 @@
                     <div class="started-content">
                         <div class="h-title glitch-effect" data-text="Resume">Resume</div>
                         <div class="h-subtitle typing-bread">
-                          <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="resume">Resume</NuxtLink></p>
+                          <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="resume">Resume</NuxtLink>
+                          </p>
                         </div>
                         <span class="typed-bread"></span>
                     </div>
@@ -51,8 +52,11 @@
                             <li><strong>E-mail:</strong> alefbarbeli@gmail.com</li>
                         </ul>
                     </div>
-                    <div class="bts"><a href="resume.pdf" target="_blank" class="btn fill" data-text="Download CV">Download
-                            CV</a></div>
+                    <div class="bts">
+                      <NuxtLink to="/resume-en.pdf" class="btn fill" target="_blank" external>
+                        Download CV
+                      </NuxtLink>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>

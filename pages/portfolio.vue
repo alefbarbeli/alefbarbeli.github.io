@@ -1,11 +1,3 @@
-<script setup>
-const items = ref([
-  {
-    name: ''
-  }
-])
-</script>
-
 <template>
   <div class="portfolio">
     <!-- Started -->

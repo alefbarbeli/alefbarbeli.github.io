@@ -20,11 +20,9 @@ export default defineNuxtConfig({
   },
 
   css: [
-    'assets/scss/animate.scss',
     'assets/scss/glitche-basic.scss',
     'assets/scss/glitche-layout.scss',
-    // 'assets/scss/ionicons.scss',
-    'assets/scss/magnific-popup.scss'
+    'assets/scss/ionicons.scss',
   ],
 
   compatibilityDate: '2024-11-11'

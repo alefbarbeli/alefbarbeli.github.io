@@ -8,7 +8,7 @@
     })
     const typing = ref(props.items[0]);
 
-    const onInit = () => {
+      const onInit = () => {
         let items = props.items;
 
         let app = '';
@@ -26,11 +26,10 @@
                 setTimeout(function () {
                     indexStart = 0;
                     indexEnd = (isReverse) ? text.length - count : count;
-                    let output = text.substring(indexStart, indexEnd);
-                    app = output;
+                    app = text.substring(indexStart, indexEnd);
                     count++;
                     typingEffect();
-                }, Math.floor(Math.random(10) * 100));
+                }, Math.floor(Math.random() * 100));
             }
             else {
                 isReverse = !isReverse;
@@ -50,13 +49,13 @@
     }
 
     onMounted(() => {
-        onInit();
+          onInit();
     });
 </script>
 
 <style scoped>
     p{
-        color: #000;
+        color: #f1f1f1;
         font-size: 24px;
         font-weight: bold;
         line-height: 30px;
