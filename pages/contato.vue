@@ -7,7 +7,7 @@
                     <div class="started-content">
                         <div class="h-title glitch-effect" data-text="Contato">Contato</div>
                         <div class="h-subtitle typing-bread">
-                            <p><a href="index.html">Home</a> / <a href="contacts.html">Contato</a></p>
+                          <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="contato">Contato</NuxtLink></p>
                         </div>
                         <span class="typed-bread"></span>
                     </div>
@@ -15,7 +15,7 @@
             </div>
             <a href="#" class="mouse_btn"><span class="ion ion-mouse"></span></a>
         </div>
-        
+
         <!-- Contacts Info -->
         <div class="section contacts">
             <div class="content">
@@ -38,7 +38,7 @@
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="contact_form">
                     <form id="cform" method="post">
                         <div class="group-val">

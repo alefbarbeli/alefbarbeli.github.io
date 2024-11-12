@@ -7,7 +7,7 @@
                     <div class="started-content">
                         <div class="h-title glitch-effect" data-text="Resume">Resume</div>
                         <div class="h-subtitle typing-bread">
-                            <p><a href="index.html">Home</a> / <a href="resume.html">Resume</a></p>
+                          <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="resume">Resume</NuxtLink></p>
                         </div>
                         <span class="typed-bread"></span>
                     </div>

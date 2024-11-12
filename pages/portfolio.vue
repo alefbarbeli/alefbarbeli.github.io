@@ -15,7 +15,7 @@ const items = ref([
           <div class="started-content">
             <div class="h-title glitch-effect" data-text="Portfolio">Portfolio</div>
             <div class="h-subtitle typing-bread">
-              <p><a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a></p>
+              <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="portfolio">Portfolio</NuxtLink></p>
             </div>
             <span class="typed-bread"></span>
           </div>
