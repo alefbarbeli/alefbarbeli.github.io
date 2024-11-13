@@ -42,10 +42,10 @@ useSeoMeta({
   left: 3rem;
   width: calc(100% - 6rem);
   height: calc(100% - 6rem);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 .container {

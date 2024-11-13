@@ -2,22 +2,18 @@
   <div class="portfolio">
     <!-- Started -->
     <div class="section started">
-      <div class="centrize full-width">
-        <div class="vertical-center">
-          <div class="started-content">
-            <div class="h-title glitch-effect" data-text="Portfolio">Portfolio</div>
-            <div class="h-subtitle typing-bread">
-              <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="portfolio">Portfolio</NuxtLink></p>
-            </div>
-            <span class="typed-bread"></span>
-          </div>
-        </div>
+      <div class="h-title glitch-effect" data-text="Portfolio">Portfolio</div>
+      <div class="h-subtitle">
+        <p><NuxtLink to="/">Home</NuxtLink> / <NuxtLink to="portfolio">Portfolio</NuxtLink></p>
       </div>
-      <a class="mouse_btn" href="#" aria-label="Scroll down"><span class="ion ion-mouse"></span></a>
+      <span class="typed-bread"></span>
+      <a href="#works" class="mouse_btn" aria-label="Scroll down">
+        <span class="ion ion-mouse"></span>
+      </a>
     </div>
 
     <!-- Works -->
-    <div class="section works">
+    <div id="works" class="section works">
       <div class="content">
         <div class="title">
           <div class="title_inner">Cases de Destaque</div>

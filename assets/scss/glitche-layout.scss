@@ -33,22 +33,15 @@ $color-primary: #e84a5f;
 
 /* 1. Header */
 header {
-  // position: fixed;
-  // left: 0;
-  // top: 30px;
+   position: absolute;
+   left: 0;
+   top: 0;
   width: 100%;
   z-index: 100;
   text-align: right;
   background: rgba(0,0,0,0.3);
   opacity: 1;
   visibility: visible;
-
-  height: 9rem;
-
-  transition: all 0.6s ease 0s;
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
 }
 
 header.active {
@@ -100,7 +93,7 @@ header.active .head-top .top-menu ul li {
 }
 
 header .head-top {
-  padding: 30px 65px 15px 65px;
+  padding: 2rem 4rem;
 }
 
 header .head-top .menu-btn {
@@ -285,19 +278,15 @@ header .head-top .top-menu ul li.active .btn {
   padding: 0;
   margin: 0;
   position: relative;
-  height: calc(100vh - 21rem);
+  min-height: calc(100vh - 6rem);
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.section.started .started-content {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-}
-
-
-.section.started .started-content .h-title {
+.section.started .h-title {
   font-size: 80px;
   font-family: 'Share Tech Mono', monospace;
   color: #f1f1f1;
@@ -308,48 +297,48 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 @media (max-width: 1060px) {
-  .section.started .started-content .h-title.blog_title {
+  .section.started .h-title.blog_title {
     font-size: 48px;
   }
 
 }
 
 @media (max-width: 840px) {
-  .section.started .started-content .h-title {
+  .section.started .h-title {
     font-size: 52px;
     padding: 0 20px;
   }
 
-  .section.started .started-content .h-title.blog_title {
+  .section.started .h-title.blog_title {
     font-size: 40px;
   }
 
 }
 
 @media (max-width: 580px) {
-  .section.started .started-content .h-title span {
+  .section.started .h-title span {
     display: block;
   }
 
 }
 
 @media (max-width: 480px) {
-  .section.started .started-content .h-title {
+  .section.started .h-title {
     font-size: 42px;
   }
 
-  .section.started .started-content .h-title.blog_title {
+  .section.started .h-title.blog_title {
     font-size: 26px;
   }
 
 }
 
-.section.started .started-content .h-subtitle {
+.section.started .h-subtitle {
   font-size: 13px;
 }
 
-.section.started .started-content .typed-subtitle,
-.section.started .started-content .typed-bread {
+.section.started .typed-subtitle,
+.section.started .typed-bread {
   font-size: 13px;
 }
 
@@ -363,6 +352,7 @@ header .head-top .top-menu ul li.active .btn {
   left: 50%;
   bottom: 80px;
   margin-left: -10px;
+  border: none;
 }
 
 .section.started .mouse_btn .ion {
