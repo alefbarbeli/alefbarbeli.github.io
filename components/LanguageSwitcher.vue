@@ -1,5 +1,5 @@
 <template>
-  <NuxtImg
+  <img
     v-for="loc in locales"
     :key="loc.code"
     @click="switchLocale(loc.code)"
