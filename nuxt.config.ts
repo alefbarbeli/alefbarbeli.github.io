@@ -1,8 +1,30 @@
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxtjs/google-fonts'
   ],
+
+  i18n: {
+    defaultLocale: 'br',
+    locales: [
+      {
+        code: 'br',
+        language: 'pt-BR',
+        name: 'Português (Brasil)',
+        file: 'pt-BR.json',
+      },
+      {
+        code: 'en',
+        language: 'en',
+        name: 'English',
+        file: 'en.json',
+      },
+    ],
+    vueI18n: './i18n.config.ts',
+    strategy: 'no_prefix',
+    lazy: true,
+  },
 
   googleFonts: {
     families: {

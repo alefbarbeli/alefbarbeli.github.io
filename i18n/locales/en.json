@@ -1,0 +1,24 @@
+{
+  "about": {
+    "title": "About Me",
+    "description": [
+      "A Front-end Engineer and Vue specialist with 8+ years of experience building web apps with cutting-edge technologies like Nuxt, Typescript, GraphQL, Tailwind CSS and more.",
+      "Strongly experienced in e-commerce environment, I've already worked with different platforms like Magento 1 and 2, Commercetools, Prestashop, SAP Commerce, Oracle Commerce Cloud and Vtex.",
+      "Currently based in São Paulo/ Brasil, with proficient English communication and writing. I'm open and willing to relocate - traveling and connecting to new cultures and people is my major passion.",
+      "I love Open Source projects and working with fast-paced teams. Curious and creative people are what inspire me the most."
+    ],
+    "info": {
+      "name": "Name",
+      "valueName": "Alef Barbeli de Lima",
+      "age": "Age",
+      "valueAge": "30 Years",
+      "job": "Job",
+      "valueJob": "Front-End Developer",
+      "location": "Location",
+      "valueLocation": "São Paulo/ SP",
+      "email": "E-mail",
+      "valueEmail": "alefbarbeli{'@'}gmail.com"
+    },
+    "downloadCV": "Download CV"
+  }
+}
