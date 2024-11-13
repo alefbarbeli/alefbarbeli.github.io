@@ -3,6 +3,7 @@
     v-for="loc in locales"
     :key="loc.code"
     @click="switchLocale(loc.code)"
+    :alt="loc.name"
     class="flag"
     :class="{ hidden: loc.code === locale }"
     :src="`/${loc.code}.svg`"
