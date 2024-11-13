@@ -195,7 +195,7 @@ header .head-top .top-menu ul li.active .btn {
 /* 2. Section */
 .section {
   position: relative;
-  padding: 0 80px 150px 80px;
+  padding: 40px 20px 80px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -203,21 +203,16 @@ header .head-top .top-menu ul li.active .btn {
   -moz-transition: all 0.6s ease 0s;
   -webkit-transition: all 0.6s ease 0s;
   -o-transition: all 0.6s ease 0s;
-}
 
-@media (max-width: 960px) {
-  .section {
-    padding: 0 40px 120px 40px;
+  @media (min-width: 768px) {
+    padding: 40px 40px 80px;
   }
 
-}
-
-@media (max-width: 480px) {
-  .section {
-    padding: 0 20px 120px 20px;
+  @media (min-width: 1024px) {
+    padding: 40px 80px 110px;
   }
-
 }
+
 
 .section .content {
   position: relative;
@@ -236,9 +231,6 @@ header .head-top .top-menu ul li.active .btn {
   @media (min-width: 1280px) {
    max-width: 1280px;
   }
-  //@media (min-width: 1536px) {
-   //max-width: 1536px;
-  //}
 }
 
 .section .content .title {
@@ -258,7 +250,7 @@ header .head-top .top-menu ul li.active .btn {
   text-align: center;
   position: relative;
   line-height: 18px;
-  font-size: 13px;
+  font-size: 1.75rem;
   color: #f1f1f1;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -266,10 +258,10 @@ header .head-top .top-menu ul li.active .btn {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  box-shadow: inset 0 -6px 0px #ede574;
-  -moz-box-shadow: inset 0 -6px 0px #ede574;
-  -webkit-box-shadow: inset 0 -6px 0px #ede574;
-  -khtml-box-shadow: inset 0 -6px 0px #ede574;
+  box-shadow: inset 0 -6px 0px #e5495e;
+  -moz-box-shadow: inset 0 -6px 0px #e5495e;
+  -webkit-box-shadow: inset 0 -6px 0px #e5495e;
+  -khtml-box-shadow: inset 0 -6px 0px #e5495e;
 }
 
 /* 3. Started */
@@ -278,12 +270,21 @@ header .head-top .top-menu ul li.active .btn {
   padding: 0;
   margin: 0;
   position: relative;
-  min-height: calc(100vh - 6rem);
+  min-height: calc(100vh - 2rem);
   overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 4rem);
+  }
+
+  @media (min-width: 1024px) {
+    min-height: calc(100vh - 6rem);
+  }
 }
 
 .section.started .h-title {
@@ -855,10 +856,10 @@ header .head-top .top-menu ul li.active .btn {
   color: #f1f1f1;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  box-shadow: inset 0 -6px 0px #ede574;
-  -moz-box-shadow: inset 0 -6px 0px #ede574;
-  -webkit-box-shadow: inset 0 -6px 0px #ede574;
-  -khtml-box-shadow: inset 0 -6px 0px #ede574;
+  box-shadow: inset 0 -6px 0px #e5495e;
+  -moz-box-shadow: inset 0 -6px 0px #e5495e;
+  -webkit-box-shadow: inset 0 -6px 0px #e5495e;
+  -khtml-box-shadow: inset 0 -6px 0px #e5495e;
 }
 
 /* 10. Contacts */

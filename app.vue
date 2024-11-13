@@ -38,10 +38,10 @@ useSeoMeta({
   position: fixed;
   z-index: 4;
   background-color: #3e3e3e;
-  top: 3rem;
-  left: 3rem;
-  width: calc(100% - 6rem);
-  height: calc(100% - 6rem);
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,11 +50,11 @@ useSeoMeta({
 
 .container {
   position: relative;
-  margin: 3rem;
   overflow: hidden;
   background: #ffffff;
-  height: calc(100vh - 6rem);
-  width: calc(100vw - 6rem);
+  margin: 1rem;
+  height: calc(100vh - 2rem);
+  width: calc(100vw - 2rem);
   z-index: 10;
 }
 
@@ -75,6 +75,34 @@ useSeoMeta({
   -webkit-animation: Gradient 7s ease infinite;
   -moz-animation: Gradient 7s ease infinite;
   animation: Gradient 7s ease infinite;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 2rem;
+    height: calc(100vh - 4rem);
+    width: calc(100vw - 4rem);
+  }
+  .wrapper {
+    top: 2rem;
+    left: 2rem;
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 3rem;
+    height: calc(100vh - 6rem);
+    width: calc(100vw - 6rem);
+  }
+  .wrapper {
+    top: 3rem;
+    left: 3rem;
+    width: calc(100% - 6rem);
+    height: calc(100% - 6rem);
+  }
 }
 
 @-webkit-keyframes Gradient {
@@ -110,12 +138,6 @@ useSeoMeta({
   }
   100% {
     background-position: 0 50%
-  }
-}
-
-@media (max-width: 840px) {
-  .container {
-    margin: 15px;
   }
 }
 </style>

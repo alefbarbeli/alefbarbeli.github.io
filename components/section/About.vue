@@ -9,20 +9,16 @@
       </div>
       <div class="desc">
         <p>
-          Desenvolvedor Web com especialização em tecnologias Front-End, formado através de diversos
-          curso de
-          extensão, já liderei grandes projetos na área de Marketing Web e E-Commerce.<br>
-          No tempo livre participo do desenvolvimento de diversos projetos de Startups dirigindo ações de
-          cunho
-          tecnológico e/ou científico. Também comando as atividades relacionadas aos produtos da
-          organização,
-          como concepção e criação. <br>
-          Já passei por agências de desenvolvimento e publicidade tendo atendido clientes nacionais e
-          internacionais
-          de diversos setores. <br>
-          Seja em um mochilão ou em um desafio profissional (e por que não ambos), explorar novos
-          horizontes é
-          minha maior paixão.
+          A Front-end Engineer and Vue specialist with 8+ years of experience building web apps with cutting-edge technologies like Nuxt, Typescript, GraphQL, Tailwind CSS and more.
+        </p>
+        <p>
+          Strongly experienced in e-commerce environment, I've already worked with different platforms like Magento 1 and 2, Commercetools, Prestashop, SAP Commerce, Oracle Commerce Cloud and Vtex.
+        </p>
+        <p>
+          Currently based in São Paulo/ Brasil, with proficient English communication and writing. I'm open and willing to relocate - traveling and connecting to new cultures and people is my major passion.
+        </p>
+        <p>
+          I love Open Source projects and working with fast-paced teams. Curious and creative people are what inspire me the most.
         </p>
         <div class="info-list">
           <ul>
