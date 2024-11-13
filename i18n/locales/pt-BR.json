@@ -20,5 +20,55 @@
       "valueEmail": "alefbarbeli{'@'}gmail.com"
     },
     "downloadCV": "Baixar CV"
+  },
+  "resume": {
+    "sections": {
+      "experience": "Experiências Relevantes",
+      "education": "Educação"
+    },
+    "experiences": [
+      {
+        "date": "Set/ 2017 - Jul/ 2018",
+        "name": "Webstore Lojas Virtuais - Desenvolvedor Front-End",
+        "description": "Nesta minha experiência profissional mais recente, tive a oportunidade de alcançar um grande marco profissional: desenvolver um software confiável e estável que atende mais de 1 milhão de usuários por dia. Fui responsável pelo planejamento e desenvolvimento das interfaces de usuário da plataforma, com foco na retenção do cliente e conversão de venda."
+      },
+      {
+        "date": "Set/ 2014 - Abr/ 2015",
+        "name": "Agência Creative House - Web Master",
+        "description": "Na Agência de publicidade e propaganda Creative House fui responsável pelo desenvolvimento dos produtos Web da empresa, atuando diretamente nas pesquisas e desenvolvimento de tecnologias que melhor atendessem às demandas do cliente."
+      },
+      {
+        "date": "Fev/ 2014 - Ago/ 2014",
+        "name": "Estudio86 - Desenvolvedor Web Full Stack (PHP)",
+        "description": "Agência de publicidade localizada na cidade de Guarulhos, o Estudio 86 atende cliente de diversos setores. Nesta minha experiência, tive contato com desenvolvimento de web pages responsivas e adaptivas, além do desenvolvimento e manutenção de lojas virtuais."
+      }
+    ],
+    "education": [
+      {
+        "date": "2018 - 2022",
+        "name": "Engenharia da Computação - UNIVESP",
+        "description": "Atualmente cursando, tenho como objetivo com essa graduação alcançar o título de Engenheiro de Software."
+      }
+    ]
+  },
+  "services": {
+    "title": "Serviços",
+    "items": [
+      {
+        "icon": "ion ion-social-chrome",
+        "name": "Otimização de SEO",
+        "description": "Otimização de sites à nivel de código para otimização no ranqueamento de pesquisas, visando performance e qualidade."
+      },
+      {
+        "icon": "ion ion-ipad",
+        "name": "Mobile",
+        "description": "Otimização de websites para melhor aproveitamento e apresentação em dispositivos mobile."
+      },
+      {
+        "icon": "ion ion-code",
+        "name": "Lojas Virtuais",
+        "description": "Foco na conversão com estudo avançado de User Experience."
+      }
+    ]
   }
 }

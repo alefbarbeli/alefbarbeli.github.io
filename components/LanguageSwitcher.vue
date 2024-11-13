@@ -1,18 +1,18 @@
 <template>
-  <div class="language-switcher">
-    <button
-        v-for="loc in locales"
-        :key="loc.code"
-        @click="switchLocale(loc.code)"
-        :class="{ active: loc.code === locale }"
-    >
-      {{ loc.name }}
-    </button>
-  </div>
+  <NuxtImg
+    v-for="loc in locales"
+    :key="loc.code"
+    @click="switchLocale(loc.code)"
+    class="flag"
+    :class="{ hidden: loc.code === locale }"
+    :src="`/${loc.code}.svg`"
+    width="30"
+    height="20"
+  />
 </template>
 
 <script setup>
-const { setLocale, locales } = useI18n()
+const {setLocale, locales, locale} = useI18n()
 
 function switchLocale(lang) {
   setLocale(lang)
@@ -20,10 +20,7 @@ function switchLocale(lang) {
 </script>
 
 <style scoped>
-.language-switcher button {
-  margin-right: 10px;
-}
-.language-switcher .active {
-  font-weight: bold;
+.flag {
+  cursor: pointer;
 }
 </style>

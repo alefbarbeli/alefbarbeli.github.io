@@ -1,14 +1,11 @@
 <template>
-    <footer>
-        <div class="soc">
-            <a target="_blank" href="https://github.com/" aria-label="GitHub Profile">
-                <span class="ion ion-social-github"></span>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/" aria-label="LinkedIn Profile">
-                <span class="ion ion-social-linkedin"></span>
-            </a>
-        </div>
-        <!-- <div class="copy">© 2023 Alef Barbeli.</div> -->
-        <div class="clr"></div>
-    </footer>
+  <footer>
+    <LanguageSwitcher />
+    <a aria-label="GitHub Profile" href="https://github.com/" target="_blank">
+      <span class="ion ion-social-github"></span>
+    </a>
+    <a aria-label="LinkedIn Profile" href="https://www.instagram.com/" target="_blank">
+      <span class="ion ion-social-linkedin"></span>
+    </a>
+  </footer>
 </template>

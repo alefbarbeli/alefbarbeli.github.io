@@ -20,5 +20,56 @@
       "valueEmail": "alefbarbeli{'@'}gmail.com"
     },
     "downloadCV": "Download CV"
+  },
+  "resume": {
+    "sections": {
+      "experience": "Relevant Experiences",
+      "education": "Education"
+    },
+    "experiences": [
+      {
+        "date": "Sep/ 2017 - Jul/ 2018",
+        "name": "Webstore Virtual Stores - Front-End Developer",
+        "description": "In this most recent professional experience, I had the opportunity to achieve a significant professional milestone: developing reliable and stable software that serves over 1 million users per day. I was responsible for planning and developing the platform's user interfaces, focusing on customer retention and sales conversion."
+      },
+      {
+        "date": "Sep/ 2014 - Apr/ 2015",
+        "name": "Creative House Agency - Web Master",
+        "description": "At the advertising and propaganda agency Creative House, I was responsible for developing the company's web products, directly involved in researching and developing technologies that best met client demands."
+      },
+      {
+        "date": "Feb/ 2014 - Aug/ 2014",
+        "name": "Estudio86 - Full Stack Web Developer (PHP)",
+        "description": "An advertising agency located in Guarulhos city, Estudio86 serves clients from various sectors. In this experience, I worked on developing responsive and adaptive web pages, as well as developing and maintaining online stores."
+      }
+    ],
+    "education": [
+      {
+        "date": "2018 - 2022",
+        "name": "Computer Engineering - UNIVESP",
+        "description": "Currently studying, aiming to achieve the title of Software Engineer with this degree."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "icon": "ion ion-social-chrome",
+        "name": "SEO Optimization",
+        "description": "Website code-level optimization for better search ranking, aiming for performance and quality."
+      },
+      {
+        "icon": "ion ion-ipad",
+        "name": "Mobile",
+        "description": "Optimizing websites for better usability and presentation on mobile devices."
+      },
+      {
+        "icon": "ion ion-code",
+        "name": "Online Stores",
+        "description": "Focus on conversion with advanced User Experience studies."
+      }
+    ]
   }
 }
+

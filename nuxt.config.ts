@@ -2,7 +2,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxt/image'
   ],
 
   i18n: {
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
       },
     ],
     vueI18n: './i18n.config.ts',
-    strategy: 'no_prefix',
+    // strategy: 'no_prefix',
     lazy: true,
   },
 
