@@ -16,10 +16,14 @@
       </div>
 
     </div>
+
+    <SpeedInsights />
   </div>
 </template>
 
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue';
+
 useSeoMeta({
   title: 'Alef Barbeli, Front-end Developer',
   ogTitle: 'Alef Barbeli, Front-end Developer',
