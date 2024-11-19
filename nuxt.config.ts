@@ -49,11 +49,6 @@ export default defineNuxtConfig({
     'assets/scss/ionicons.scss',
   ],
 
-  scripts: {
-    registry: {
-      googleAnalytics: true,
-    }
-  },
   runtimeConfig: {
     public: {
       scripts: {
