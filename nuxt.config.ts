@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     '@nuxt/scripts'
   ],
 
+  nitro: {
+    preset: 'vercel-edge',
+    static: true,
+  },
+
   i18n: {
     defaultLocale: 'br',
     locales: [
