@@ -7,10 +7,6 @@ export default defineNuxtConfig({
     '@nuxt/scripts'
   ],
 
-  nitro: {
-    static: true,
-  },
-
   i18n: {
     defaultLocale: 'br',
     locales: [
