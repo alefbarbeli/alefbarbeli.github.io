@@ -1,3 +1,16 @@
+<script setup lang="ts">
+const birthDate = new Date('1994-01-11');
+const currentAge = computed(() => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+});
+</script>
+
 <template>
   <div class="section about">
     <div class="content">
@@ -5,7 +18,7 @@
         <div class="title_inner">{{ $t('about.title') }}</div>
       </div>
       <div class="image">
-        <img alt="" src="assets/images/man1.jpg" />
+        <NuxtImg alt="" width="100" height="100" src="/profile.jpg" />
       </div>
       <div class="desc">
         <p v-for="paragraph in $tm('about.description')" :key="paragraph">
@@ -19,7 +32,7 @@
             </li>
             <li>
               <strong>{{ $t('about.info.age') }}:</strong>
-              {{ $t('about.info.valueAge') }}
+              {{ currentAge }} {{ $t('about.info.valueAge') }}
             </li>
             <li>
               <strong>{{ $t('about.info.job') }}:</strong>
@@ -45,5 +58,3 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-</script>

@@ -1,13 +1,6 @@
 $color-primary: #26b9ea;
 $color-secondary: #db2ee2;
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .25s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
 /* 1. Basic */
 html {
   font-size: 16px;
@@ -39,53 +32,6 @@ body.loaded .section {
 }
 
 .clear {
-  clear: both;
-}
-
-/* 3. Columns */
-.cols {
-  position: relative;
-}
-
-.cols .col.col-sm {
-  float: left;
-  width: 25%;
-}
-
-@media (max-width: 840px) {
-  .cols .col.col-sm {
-    width: 100%;
-  }
-
-}
-
-.cols .col.col-lg {
-  float: left;
-  width: 75%;
-}
-
-@media (max-width: 840px) {
-  .cols .col.col-lg {
-    width: 100%;
-  }
-
-}
-
-.cols .col.col-md {
-  float: left;
-  width: 50%;
-}
-
-@media (max-width: 840px) {
-  .cols .col.col-md {
-    width: 100%;
-  }
-
-}
-
-.cols:after {
-  content: '';
-  display: block;
   clear: both;
 }
 
@@ -184,28 +130,6 @@ a.btn:hover,
   color: #ffffff;
   background: $color-primary;
   border: 1px solid $color-primary;
-}
-
-/* 7. Preloader */
-.preloader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-
-.preloader .load {
-  color: $color-primary;
-  font-size: 0.75rem;
-}
-
-.preloader .typed-load,
-.preloader .typed-cursor {
-  color: $color-primary;
-  font-size: 0.75rem;
 }
 
 /* 8. Forms */
@@ -317,34 +241,6 @@ textarea:focus:-ms-input-placeholder {
   color: #f1f1f1;
 }
 
-input.error,
-textarea.error {
-  border-bottom: 1px solid red !important;
-}
-
-label.error {
-  display: none!important;
-}
-
-input.error::-moz-placeholder,
-textarea.error::-moz-placeholder {
-  color: red;
-}
-
-input.error:-moz-placeholder,
-textarea.error:-moz-placeholder {
-  color: red;
-}
-
-input.error:-ms-input-placeholder,
-textarea.error:-ms-input-placeholder {
-  color: red;
-}
-
-input.error::-webkit-input-placeholder,
-textarea.error::-webkit-input-placeholder {
-  color: red;
-}
 
 /* 9. Lists */
 ol,
@@ -687,4 +583,24 @@ blockquote {
 
 .hidden {
   display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -1,6 +1,4 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
-
 interface ServiceItem {
   icon: string;
   name: string;
@@ -15,6 +13,7 @@ export default defineComponent({
   }
 });
 </script>
+
 
 <template>
   <div id="service" class="section service">

@@ -7,60 +7,67 @@
       <div class="skills">
         <ul>
           <li>
-            <div class="name">HTML & CSS</div>
-            <div class="progress">
-              <div class="percentage" style="width:100%;">
-                <span class="percent">100%</span>
-              </div>
-            </div>
+            Front-End Development
           </li>
           <li>
-            <div class="name">Javascript/ ES6</div>
-            <div class="progress">
-              <div class="percentage" style="width:90%;">
-                <span class="percent">90%</span>
-              </div>
-            </div>
+            Vue.js
           </li>
           <li>
-            <div class="name">jQuery</div>
-            <div class="progress">
-              <div class="percentage" style="width:100%;">
-                <span class="percent">100%</span>
-              </div>
-            </div>
+            Nuxt.js
           </li>
           <li>
-            <div class="name">API Rest</div>
-            <div class="progress">
-              <div class="percentage" style="width:80%;">
-                <span class="percent">80%</span>
-              </div>
-            </div>
+            TypeScript
           </li>
           <li>
-            <div class="name">Vue.js</div>
-            <div class="progress">
-              <div class="percentage" style="width:85%;">
-                <span class="percent">85%</span>
-              </div>
-            </div>
+            JavaScript
           </li>
           <li>
-            <div class="name">Angular.js</div>
-            <div class="progress">
-              <div class="percentage" style="width:50%;">
-                <span class="percent">50%</span>
-              </div>
-            </div>
+            GraphQL
           </li>
           <li>
-            <div class="name">React.js</div>
-            <div class="progress">
-              <div class="percentage" style="width:50%;">
-                <span class="percent">50%</span>
-              </div>
-            </div>
+            Apollo GraphQL
+          </li>
+          <li>
+            Figma
+          </li>
+          <li>
+            Node.js
+          </li>
+          <li>
+            E-Commerce
+          </li>
+          <li>
+            Headless Framework
+          </li>
+          <li>
+            Amazon Web Services (AWS)
+          </li>
+          <li>
+            AngularJS
+          </li>
+          <li>
+            RESTful WebServices
+          </li>
+          <li>
+            JAMstack
+          </li>
+          <li>
+            PHP
+          </li>
+          <li>
+            WordPress
+          </li>
+          <li>
+            PrestaShop
+          </li>
+          <li>
+            Magento
+          </li>
+          <li>
+            Oracle Commerce Cloud
+          </li>
+          <li>
+            Svelte
           </li>
         </ul>
       </div>

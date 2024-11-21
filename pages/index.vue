@@ -7,13 +7,19 @@
     </a>
   </div>
 
-  <SectionAbout id="about" />
+  <div id="content">
+    <div>
+      <SectionAbout id="about" />
 
-  <SectionResume />
+      <SectionSkills />
 
-  <SectionSkills />
+      <SectionServices />
+    </div>
+    <div>
+      <SectionResume />
+    </div>
 
-  <SectionServices />
+  </div>
 </template>
 
 <script setup>
@@ -26,3 +32,10 @@ const items = ref([
   'HTML5, CSS3, ES6, API Rest',
 ])
 </script>
+
+<style lang="postcss">
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+</style>

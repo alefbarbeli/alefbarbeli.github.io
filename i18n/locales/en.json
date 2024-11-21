@@ -11,7 +11,7 @@
       "name": "Name",
       "valueName": "Alef Barbeli de Lima",
       "age": "Age",
-      "valueAge": "30 Years",
+      "valueAge": "Years",
       "job": "Job",
       "valueJob": "Front-End Developer",
       "location": "Location",
@@ -28,25 +28,73 @@
     },
     "experiences": [
       {
-        "date": "Sep/ 2017 - Jul/ 2018",
+        "name": "Saúde Trevo - Front-End Engineer",
+        "date": "Jul/ 2024 - Nov/ 2024",
+        "location": "Localidade",
+        "description": "",
+        "skills": []
+      },
+      {
+        "name": "Pasquali Solution - Front-End Engineer",
+        "date": "Jul/ 2023 - Mar/ 2024",
+        "location":"São Paulo, São Paulo, Brazil - Remote",
+        "description": "",
+        "skills": ["Svelte", "TypeScript", "Nuxt.js", "Figma"]
+      },
+      {
+        "name": "Vue Storefront - Front-End Engineer",
+        "date": "Jul/ 2021 - Jun/ 2023",
+        "location": "São Paulo, São Paulo, Brazil - Remote",
+        "description": "As a Front-End Engineer at Vue Storefront from July 2021 to June 2022 (remote in Wrocław, Poland), I implemented the Click and Collect feature on Vue Storefront using custom Commercetools APIs (link). I was responsible for the entire process of conceptualization, planning, and development, utilizing JavaScript, TypeScript, Vue, Nuxt, and Vuex.\n\nI also worked on the Commercetools integration (link), establishing patterns and principles for all future company integrations to ensure high quality, efficiency, and excellent user experience.",
+        "skills": ["Apollo GraphQL", "TypeScript", "Nuxt.js", "Figma", "Magento", "commercetools", "GraphQL", "E-Commerce", "Headless", "Node.js", "Vue.js"]
+      },
+      {
+        "name": "Kovi - Front-End Engineer",
+        "date": "Nov/ 2019 - Jun/ 2021",
+        "location": "Wrocław, Dolnośląskie, Poland - Remote",
+        "description": "As a Front-End Engineer at Kovi, I worked on the Kovi Signup project (cadastro.kovi.com.br), aiming to simplify the vehicle rental registration process. We used JavaScript, TypeScript, Vue.js, Nuxt, Vuex, and GraphQL in a Headless architecture hosted on AWS, focusing on user experience with intuitive interfaces and efficient workflows.\n\nI also developed the Kovi Design System to support all of Kovi's front-end applications, including components used by the Mobile team. Built using the latest industry technologies, we started with Vue-Demi to migrate from Vue2 to Vue3 and used decorators to create a complex and functional Design System.",
+        "skills": ["Apollo GraphQL", "TypeScript", "Figma", "GraphQL", "Amazon Web Services (AWS)", "Headless Framework", "Node.js", "Vue.js"]
+      },
+      {
+        "name": "Corebiz - Front-End Developer",
+        "date": "May/ 2019 - Nov/ 2019",
+        "location": "São Paulo e Região, Brasil - Hybrid",
+        "description": "As a Front-End Developer at CoreBiz, I participated in the full refactoring of the UI/UX of Hering's e-commerce frontend applications (hering.com.br and dzarm.com.br). Using SAP Commerce as the backend in a multistore implementation, the refactoring was aimed at all their sub-stores.",
+        "skills": ["Nuxt.js", "Front-End Development", "E-Commerce", "Node.js", "Vue.js", "Oracle Commerce Cloud"]
+      },
+      {
+        "name": "Enext Consulting - Front-End Developer",
+        "date": "Jun/ 2018 - May/ 2019",
+        "location": "Barueri, São Paulo - On-site",
+        "description": "As a Front-End Developer at Enext Consultoria, I participated in migrating the backend of Osklen's e-commerce (osklen.com.br) from Vtex to Oracle Commerce Cloud.\n\nI also completed my first production implementation using the Nuxt.js framework on the OnStores Marketplace project, the first marketplace in Brazil for digital services specialized in shopping centers, serving as a showcase for products from physical and online stores.\n\n",
+        "skills": ["Nuxt.js", "Front-End Development", "E-Commerce", "Node.js", "Vue.js", "Oracle Commerce Cloud"]
+      },
+      {
         "name": "Webstore Virtual Stores - Front-End Developer",
-        "description": "In this most recent professional experience, I had the opportunity to achieve a significant professional milestone: developing reliable and stable software that serves over 1 million users per day. I was responsible for planning and developing the platform's user interfaces, focusing on customer retention and sales conversion."
+        "date": "Sep/ 2016 - Jun/ 2018",
+        "location": "São Paulo e Região, Brasil - On-site",
+        "description": "At Webstore Lojas Virtuais, a pioneering SaaS e-commerce platform, I served as the lead Front-End developer. I achieved a significant milestone by developing reliable, stable software that serves over 1 million users daily. I planned and built a JAM Stack system that replaced the old layout system, delivering an asynchronous, scalable, and highly reliable application view.",
+        "skills": ["AngularJS", "RESTful WebServices", "JAMstack", "E-Commerce"]
       },
       {
-        "date": "Sep/ 2014 - Apr/ 2015",
-        "name": "Creative House Agency - Web Master",
-        "description": "At the advertising and propaganda agency Creative House, I was responsible for developing the company's web products, directly involved in researching and developing technologies that best met client demands."
+        "name": "Creative House Agency - Full Stack Web Developer (PHP)",
+        "date": "Sep/ 2014 - Apr/ 2016",
+        "location": "Guarulhos, São Paulo - On-site",
+        "description": "At the advertising and propaganda agency Creative House, I was responsible for developing the company's web products, directly involved in researching and developing technologies that best met client demands.",
+        "skills": ["Front-End Development", "PHP", "WordPress"]
       },
       {
-        "date": "Feb/ 2014 - Aug/ 2014",
         "name": "Estudio86 - Full Stack Web Developer (PHP)",
-        "description": "An advertising agency located in Guarulhos city, Estudio86 serves clients from various sectors. In this experience, I worked on developing responsive and adaptive web pages, as well as developing and maintaining online stores."
+        "date": "Feb/ 2014 - Aug/ 2014",
+        "location": "São Paulo e Região, Brasil - On-site",
+        "description": "An advertising agency located in Guarulhos city, Estudio86 serves clients from various sectors. In this experience, I worked on developing responsive and adaptive web pages, as well as developing and maintaining online stores.",
+        "skills": ["Front-End Development", "E-Commerce", "PrestaShop", "Magento", "JavaScript"]
       }
     ],
     "education": [
       {
         "date": "2018 - 2022",
-        "name": "Computer Engineering - UNIVESP",
+        "name": "Bachelor of Engineering - FIAP",
         "description": "Currently studying, aiming to achieve the title of Software Engineer with this degree."
       }
     ]

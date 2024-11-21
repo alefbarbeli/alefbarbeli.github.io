@@ -1,35 +1,4 @@
-/* Import Settings */
-/* Setting */
-/* Colors */
-/* Fonts */
-/* Fonts Size */
-/* Letter-Spacing */
-/* Line Height */
-/* Forms */
-/* Params */
-
-/**
-*   Glitche (HTML)
-*   Copyright © Glitche by beshleyua. All Rights Reserved.
-**/
-
-/* TABLE OF CONTENTS
-	1. Header
-	2. Section
-	3. Started
-	4. About
-	5. Resume
-	6. Skills
-	7. Service
-	8. Portfolio
-	9. Box Items
-	10. Contacts
-	11. Blog
-	12. Footer
-	13. Popups
-*/
-
-$color-primary: #e84a5f;
+$color-primary: #e5495e;
 
 /* 1. Header */
 header {
@@ -175,7 +144,7 @@ header .head-top .top-menu ul li {
 
 header .head-top .top-menu ul li a {
   display: block;
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 
 header .head-top .top-menu ul li a.btn {
@@ -435,24 +404,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .info-list ul li {
-  display: inline-block;
-  vertical-align: top;
-  width: 32%;
-  margin: 12px 0 0 0;
-}
-
-@media (max-width: 840px) {
-  .info-list ul li {
-    width: 48%;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .info-list ul li {
-    width: 100%;
-  }
-
+  margin: 0.75rem 0 0;
 }
 
 .info-list ul li strong {
@@ -503,21 +455,21 @@ header .head-top .top-menu ul li.active .btn {
   display: none;
 }
 
-.resume-items .resume-item .date {
+.resume-items .resume-item .name {
   position: relative;
   top: -10px;
   margin: 0 0 5px 0;
   display: inline-block;
-  padding: 0 5px;
-  height: 20px;
-  line-height: 18px;
-  font-weight: 500;
-  font-size: 11px;
-  color: $color-primary;
-  border: 1px solid $color-primary;
+  padding: 7px 0.5rem;
+  height: 2rem;
+  line-height: 1;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  border: 1px solid #e84a5f;
 }
 
-.resume-items .resume-item .date:before {
+.resume-items .resume-item .name:before {
   content: '';
   width: 29px;
   height: 1px;
@@ -527,9 +479,11 @@ header .head-top .top-menu ul li.active .btn {
   background: $color-primary;
 }
 
-.resume-items .resume-item .name {
-  font-weight: 500;
-  color: #f1f1f1;
+.resume-items .resume-item .date,
+.resume-items .resume-item .location {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #d1d1d1;
   margin: 0 0 15px 0;
 }
 
@@ -542,52 +496,19 @@ header .head-top .top-menu ul li.active .btn {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .skills ul li {
-  padding: 5px 0 30px 0;
-}
-
-.skills ul li .name {
-  font-size: 13px;
-  color: #f1f1f1;
-  font-weight: 400;
-  position: relative;
-  margin: 0 0 9px 0;
-}
-
-.skills ul li .progress {
-  display: block;
-  height: 3px;
-  position: relative;
-  width: 100%;
-  background: #dddddd;
-}
-
-.skills ul li .progress .percentage {
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 3px;
-  width: 0;
-  background: $color-primary;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-.skills ul li .progress .percentage .percent {
-  position: absolute;
-  top: -27px;
-  right: 0;
-  font-size: 13px;
-  color: #f1f1f1;
-  font-weight: 400;
-}
-
-.skills ul li:last-child {
-  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #e84a5f;
+  color: white;
+  font-size: 1rem;
+  height: 2rem;
+  line-height: 1;
+  padding: 7px 0.5rem;
 }
 
 /* 7. Service */
@@ -835,18 +756,6 @@ header .head-top .top-menu ul li.active .btn {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-}
-
-.date {
-  margin: 0 0 10px 0;
-  display: inline-block;
-  padding: 0 5px;
-  height: 20px;
-  line-height: 18px;
-  font-weight: 500;
-  font-size: 11px;
-  color: $color-primary;
-  border: 1px solid $color-primary;
 }
 
 .category {
