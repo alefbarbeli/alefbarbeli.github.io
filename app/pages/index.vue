@@ -23,14 +23,9 @@
 </template>
 
 <script setup>
+const { tm } = useI18n();
 
-const items = ref([
-  'São Paulo/ SP - Brasil',
-  'Desenvolvedor Front-End',
-  'Especialista e-commerce',
-  'Vue, Angular, React',
-  'HTML5, CSS3, ES6, API Rest',
-])
+const items = computed(() => tm('home.items'));
 </script>
 
 <style lang="postcss">

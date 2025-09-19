@@ -12,7 +12,7 @@ defineProps({
   <div class="box-item f-code">
     <div class="box-content">
       <div class="image">
-        <img :alt="item.title" :src="item.image">
+        <img :alt="item.title" :src="item.meta.image">
       </div>
       <div class="desc">
         <div class="category">{{ item.category }}</div>

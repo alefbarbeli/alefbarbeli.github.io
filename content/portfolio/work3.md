@@ -1,7 +1,7 @@
 ---
 title: 'Third Project'
 category: 'Webstore'
-image: '/assets/images/works/work3.jpg'
+image: '/images/works/work3.jpg'
 description: 'Description for the third project.'
 projectUrl: '#'
 stack: 'React + Redux'
