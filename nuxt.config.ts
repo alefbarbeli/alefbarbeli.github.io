@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxthq/studio'
   ],
 
   i18n: {
@@ -26,14 +25,14 @@ export default defineNuxtConfig({
     ],
     vueI18n: './i18n.config.ts',
     // strategy: 'no_prefix',
-    lazy: true,
+    // lazy: true,
   },
 
   googleFonts: {
     families: {
       'Share Tech Mono': true
     },
-    outputDir: 'assets'
+    outputDir: '~/assets'
   },
 
   app: {
@@ -45,9 +44,9 @@ export default defineNuxtConfig({
   },
 
   css: [
-    'assets/scss/glitche-basic.scss',
-    'assets/scss/glitche-layout.scss',
-    'assets/scss/ionicons.scss',
+    '~/assets/scss/glitche-basic.scss',
+    '~/assets/scss/glitche-layout.scss',
+    '~/assets/scss/ionicons.scss',
   ],
 
   runtimeConfig: {
