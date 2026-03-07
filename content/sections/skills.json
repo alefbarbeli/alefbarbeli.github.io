@@ -1,0 +1,51 @@
+{
+  "section": "skills",
+  "items": {
+    "br": [
+      "Front-End Development",
+      "Vue.js",
+      "Nuxt.js",
+      "TypeScript",
+      "JavaScript",
+      "GraphQL",
+      "Apollo GraphQL",
+      "Figma",
+      "Node.js",
+      "E-Commerce",
+      "Headless Framework",
+      "Amazon Web Services (AWS)",
+      "AngularJS",
+      "RESTful WebServices",
+      "JAMstack",
+      "PHP",
+      "WordPress",
+      "PrestaShop",
+      "Magento",
+      "Oracle Commerce Cloud",
+      "Svelte"
+    ],
+    "en": [
+      "Front-End Development",
+      "Vue.js",
+      "Nuxt.js",
+      "TypeScript",
+      "JavaScript",
+      "GraphQL",
+      "Apollo GraphQL",
+      "Figma",
+      "Node.js",
+      "E-Commerce",
+      "Headless Framework",
+      "Amazon Web Services (AWS)",
+      "AngularJS",
+      "RESTful WebServices",
+      "JAMstack",
+      "PHP",
+      "WordPress",
+      "PrestaShop",
+      "Magento",
+      "Oracle Commerce Cloud",
+      "Svelte"
+    ]
+  }
+}

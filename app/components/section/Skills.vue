@@ -6,71 +6,21 @@
       </div>
       <div class="skills">
         <ul>
-          <li>
-            Front-End Development
-          </li>
-          <li>
-            Vue.js
-          </li>
-          <li>
-            Nuxt.js
-          </li>
-          <li>
-            TypeScript
-          </li>
-          <li>
-            JavaScript
-          </li>
-          <li>
-            GraphQL
-          </li>
-          <li>
-            Apollo GraphQL
-          </li>
-          <li>
-            Figma
-          </li>
-          <li>
-            Node.js
-          </li>
-          <li>
-            E-Commerce
-          </li>
-          <li>
-            Headless Framework
-          </li>
-          <li>
-            Amazon Web Services (AWS)
-          </li>
-          <li>
-            AngularJS
-          </li>
-          <li>
-            RESTful WebServices
-          </li>
-          <li>
-            JAMstack
-          </li>
-          <li>
-            PHP
-          </li>
-          <li>
-            WordPress
-          </li>
-          <li>
-            PrestaShop
-          </li>
-          <li>
-            Magento
-          </li>
-          <li>
-            Oracle Commerce Cloud
-          </li>
-          <li>
-            Svelte
+          <li v-for="(skill, index) in skills" :key="`${skill}-${index}`">
+            {{ skill }}
           </li>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n();
+
+const { data: skills } = await useFetch<string[]>('/api/sections/skills', {
+  query: computed(() => ({ locale: locale.value })),
+  watch: [locale],
+  default: () => []
+});
+</script>
