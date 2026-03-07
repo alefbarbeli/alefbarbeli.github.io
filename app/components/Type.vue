@@ -1,65 +1,86 @@
 <template>
-    <p>{{ typing }}</p>
+  <p>{{ typing }}</p>
 </template>
 
 <script setup>
-    const props = defineProps({
-        items: Array
-    })
-    const typing = ref(props.items[0]);
+const props = defineProps({
+  items: {
+    type: Array,
+    default: () => []
+  }
+});
 
-      const onInit = () => {
-        let items = props.items;
+const typing = ref('');
+let timerId = null;
 
-        let app = '';
-        let count = 0;
-        let index = 0;
-        let indexStart;
-        let indexEnd;
-        let isReverse = false;
+const onInit = () => {
+  const items = props.items;
 
-        function typingEffect() {
-            typing.value = app;
+  if (!items.length) {
+    typing.value = '';
+    return;
+  }
 
-            let text = items[index];
-            if (count <= text.length) {
-                setTimeout(function () {
-                    indexStart = 0;
-                    indexEnd = (isReverse) ? text.length - count : count;
-                    app = text.substring(indexStart, indexEnd);
-                    count++;
-                    typingEffect();
-                }, Math.floor(Math.random() * 100));
-            }
-            else {
-                isReverse = !isReverse;
-                count = 0;
-                if (!isReverse)
-                    index = (index + 1 < items.length) ? index + 1 : 0;
-                setTimeout(function () {
-                    app = '';
-                    typingEffect();
-                }, (isReverse) ? 2000 : 150);
-            }
-        }
+  let currentText = '';
+  let count = 0;
+  let index = 0;
+  let isReverse = false;
 
-        setTimeout(() => {
-            typingEffect();
-        }, 1000); // Adjust the delay time in milliseconds as needed
+  const schedule = (callback, delay) => {
+    timerId = setTimeout(callback, delay);
+  };
+
+  const typingEffect = () => {
+    typing.value = currentText;
+
+    const text = items[index];
+    if (count <= text.length) {
+      schedule(() => {
+        const indexStart = 0;
+        const indexEnd = isReverse ? text.length - count : count;
+        currentText = text.substring(indexStart, indexEnd);
+        count++;
+        typingEffect();
+      }, Math.floor(Math.random() * 100));
+      return;
     }
 
-    onMounted(() => {
-          onInit();
-    });
+    isReverse = !isReverse;
+    count = 0;
+
+    if (!isReverse) {
+      index = index + 1 < items.length ? index + 1 : 0;
+    }
+
+    schedule(() => {
+      currentText = '';
+      typingEffect();
+    }, isReverse ? 2000 : 150);
+  };
+
+  schedule(() => {
+    typingEffect();
+  }, 1000);
+};
+
+onMounted(() => {
+  onInit();
+});
+
+onBeforeUnmount(() => {
+  if (timerId) {
+    clearTimeout(timerId);
+  }
+});
 </script>
 
 <style scoped>
-    p{
-        color: #f1f1f1;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 30px;
-        height: 30px;
-        padding: 0;
-    }
+p {
+  color: #f1f1f1;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  padding: 0;
+}
 </style>
