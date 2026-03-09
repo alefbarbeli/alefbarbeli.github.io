@@ -10,3 +10,4 @@ node_modules
 .pnpm-store
 dist
 /.output/
+scripts/.linkedin-sync.latest.json

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
+const localePath = useLocalePath();
 
 defineProps({
   item: {
@@ -9,21 +10,25 @@ defineProps({
 });
 
 const getItemPath = (item: Record<string, any>) => item.path || item._path || null;
+const getLocalizedItemPath = (item: Record<string, any>) => {
+  const rawPath = getItemPath(item);
+  return rawPath ? localePath(rawPath) : null;
+};
 </script>
 
 <template>
   <div class="box-item f-code">
     <div class="box-content">
       <div class="image">
-        <NuxtLink v-if="getItemPath(item)" :to="getItemPath(item)">
+        <NuxtLink v-if="getLocalizedItemPath(item)" :to="getLocalizedItemPath(item)">
           <img :alt="item.title" :src="item.meta?.image || item.image">
         </NuxtLink>
         <img v-else :alt="item.title" :src="item.meta?.image || item.image">
       </div>
       <div class="desc">
         <div class="category">{{ item.category || item.meta?.category }}</div>
-        <h4 v-if="getItemPath(item)">
-          <NuxtLink :to="getItemPath(item)">{{ item.title }}</NuxtLink>
+        <h4 v-if="getLocalizedItemPath(item)">
+          <NuxtLink :to="getLocalizedItemPath(item)">{{ item.title }}</NuxtLink>
         </h4>
         <h4 v-else>{{ item.title }}</h4>
         <span class="name">{{ item.stack }}</span>
@@ -32,8 +37,8 @@ const getItemPath = (item: Record<string, any>) => item.path || item._path || nu
         </p>
         <div class="actions">
           <NuxtLink
-            v-if="getItemPath(item)"
-            :to="getItemPath(item)"
+            v-if="getLocalizedItemPath(item)"
+            :to="getLocalizedItemPath(item)"
             class="btn"
             :data-text="t('portfolio.viewDetails')"
           >
@@ -67,7 +72,8 @@ const getItemPath = (item: Record<string, any>) => item.path || item._path || nu
   min-height: 100%;
   border: 2px solid rgb(229 73 94 / 35%);
   background: rgb(255 255 255 / 2%);
-  transition: all 300ms;
+  transition: all 200ms ease-out;
+  box-shadow: 0px 0px 0px #ffffff;
 }
 
 .box-content:hover {

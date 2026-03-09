@@ -7,13 +7,16 @@
       <div class="top-menu">
         <ul>
           <li>
-            <NuxtLink class="lnk" to="/">Alef</NuxtLink>
+            <NuxtLink class="lnk" :to="localePath('/')">Alef</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" to="/portfolio">Portfolio</NuxtLink>
+            <NuxtLink class="lnk" :to="localePath('/portfolio')">Portfolio</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" to="/contato">Contato</NuxtLink>
+            <NuxtLink class="lnk" :to="localePath('/contato')">Contato</NuxtLink>
+          </li>
+          <li class="lang-item">
+            <LanguageSwitcher />
           </li>
           <li>
             <NuxtLink class="btn" external target="_blank" to="/resume-en.pdf">Download CV</NuxtLink>
@@ -25,4 +28,5 @@
 
 </template>
 <script lang="ts" setup>
+const localePath = useLocalePath();
 </script>

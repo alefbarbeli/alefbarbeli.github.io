@@ -1,39 +1,50 @@
 <script setup lang="ts">
+import {
+  resolveLocalizedPortfolioDocBySlug
+} from '~/utils/portfolio-content';
+
 const route = useRoute();
+const { locale, locales, defaultLocale } = useI18n();
+const localePath = useLocalePath();
 
 const slug = computed(() => String(route.params.slug || ''));
-const contentPath = computed(() => `/portfolio/${slug.value}`);
 
-const { data: doc } = await useAsyncData(
-  () => `portfolio-doc-${slug.value}`,
-  () => queryCollection('portfolio').path(contentPath.value).first()
+const { data: contentDoc } = await useAsyncData(
+  () => `portfolio-doc-${slug.value}-${locale.value}`,
+  async () => {
+    const docs = await queryCollection('portfolio').all();
+    return resolveLocalizedPortfolioDocBySlug(docs as Record<string, any>[], slug.value, {
+      locale: String(locale.value),
+      defaultLocale: String(defaultLocale),
+      locales: locales.value as any[]
+    });
+  }
 );
 
-if (!doc.value) {
+if (!contentDoc.value) {
   throw createError({ statusCode: 404, statusMessage: 'Portfolio item not found', fatal: true });
 }
 
 useSeoMeta({
-  title: () => `${doc.value?.title || 'Portfolio'} - Alef Barbeli`,
-  description: () => String(doc.value?.description || ''),
-  ogImage: () => String((doc.value as any)?.meta?.image || (doc.value as any)?.image || '/profile.jpg')
+  title: () => `${contentDoc.value?.title || 'Portfolio'} - Alef Barbeli`,
+  description: () => String(contentDoc.value?.description || ''),
+  ogImage: () => String(contentDoc.value?.meta?.image || contentDoc.value?.image || '/profile.jpg')
 });
 
-const image = computed(() => (doc.value as any)?.meta?.image || (doc.value as any)?.image || '/profile.jpg');
-const category = computed(() => (doc.value as any)?.category || (doc.value as any)?.meta?.category);
-const stack = computed(() => (doc.value as any)?.stack || (doc.value as any)?.meta?.stack);
-const tags = computed(() => (doc.value as any)?.tags || (doc.value as any)?.meta?.tags || []);
-const hasBody = computed(() => Boolean((doc.value as any)?.body?.children?.length));
+const image = computed(() => contentDoc.value?.image || contentDoc.value?.meta?.image || '/profile.jpg');
+const category = computed(() => contentDoc.value?.category || contentDoc.value?.meta?.category);
+const stack = computed(() => contentDoc.value?.stack || contentDoc.value?.meta?.stack);
+const tags = computed(() => contentDoc.value?.tags || contentDoc.value?.meta?.tags || []);
 </script>
 
 <template>
   <article class="portfolio-post">
     <div class="section started">
-      <div class="h-title">{{ doc?.title }}</div>
+      <div class="h-title">{{ contentDoc?.title }}</div>
       <div class="h-subtitle">
         <p>
-          <NuxtLink to="/">{{ $t('portfolio.breadcrumbHome') }}</NuxtLink>
-           / <NuxtLink to="/portfolio">{{ $t('portfolio.title') }}</NuxtLink>
+          <NuxtLink :to="localePath('/')">{{ $t('portfolio.breadcrumbHome') }}</NuxtLink>
+           / <NuxtLink :to="localePath('/portfolio')">{{ $t('portfolio.title') }}</NuxtLink>
         </p>
       </div>
       <span class="typed-bread"></span>
@@ -45,13 +56,13 @@ const hasBody = computed(() => Boolean((doc.value as any)?.body?.children?.lengt
     <div class="section">
       <div class="content">
         <div class="back-link">
-          <NuxtLink to="/portfolio">← {{ $t('portfolio.title') }}</NuxtLink>
+          <NuxtLink :to="localePath('/portfolio')">← {{ $t('portfolio.title') }}</NuxtLink>
         </div>
 
         <div class="post-header">
           <p v-if="category" class="post-category">{{ category }}</p>
-          <h1>{{ doc?.title }}</h1>
-          <p class="post-description">{{ doc?.description }}</p>
+          <h1>{{ contentDoc?.title }}</h1>
+          <p class="post-description">{{ contentDoc?.description }}</p>
 
           <div class="post-meta">
             <span v-if="stack">{{ stack }}</span>
@@ -63,13 +74,13 @@ const hasBody = computed(() => Boolean((doc.value as any)?.body?.children?.lengt
         </div>
 
         <div class="post-cover">
-          <img :src="image" :alt="doc?.title">
+          <img :src="image" :alt="contentDoc?.title">
         </div>
 
         <div class="post-body">
-          <ContentRenderer v-if="hasBody" :value="doc" />
+          <ContentRenderer v-if="contentDoc?.body" :value="contentDoc" />
           <p v-else>
-            {{ doc?.description }}
+            {{ contentDoc?.description }}
           </p>
         </div>
       </div>

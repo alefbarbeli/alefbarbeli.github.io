@@ -35,14 +35,11 @@
 </template>
 
 <script setup lang="ts">
-type WorkItem = {
-  category?: string;
-  meta?: {
-    category?: string;
-  };
-};
+import { resolveLocalizedPortfolioDocs } from '~/utils/portfolio-content';
 
-const { t } = useI18n();
+type WorkItem = Record<string, any>;
+
+const { t, locale, locales, defaultLocale } = useI18n();
 
 const activeCategory = ref('all');
 
@@ -54,9 +51,17 @@ if (!works.value) {
   throw createError({ statusCode: 404, statusMessage: 'portfolio posts not found', fatal: true });
 }
 
+const localizedWorks = computed(() =>
+  resolveLocalizedPortfolioDocs(works.value as WorkItem[], {
+    locale: String(locale.value),
+    defaultLocale: String(defaultLocale),
+    locales: locales.value as any[]
+  })
+);
+
 const categories = computed(() => {
   const values = new Set<string>();
-  for (const item of works.value as WorkItem[]) {
+  for (const item of localizedWorks.value as WorkItem[]) {
     const category = item.category ?? item.meta?.category;
     if (category) {
       values.add(category);
@@ -72,10 +77,10 @@ const categoryFilters = computed(() => [
 
 const filteredWorks = computed(() => {
   if (activeCategory.value === 'all') {
-    return works.value;
+    return localizedWorks.value;
   }
 
-  return works.value.filter((item: WorkItem) => {
+  return localizedWorks.value.filter((item: WorkItem) => {
     const category = item.category ?? item.meta?.category;
     return category === activeCategory.value;
   });

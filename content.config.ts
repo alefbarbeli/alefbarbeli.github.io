@@ -4,7 +4,7 @@ export default defineContentConfig({
   collections: {
     portfolio: defineCollection({
       type: 'page',
-      source: 'portfolio/*.md'
+      source: 'portfolio/**/*.md'
     }),
     sections: defineCollection({
       type: 'data',

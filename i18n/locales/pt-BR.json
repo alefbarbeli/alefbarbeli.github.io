@@ -1,8 +1,8 @@
 {
   "home": {
     "items": [
-      "São Paulo/ SP - Brasil",
-      "Desenvolvedor Front-End",
+      "São Paulo, São Paulo, Brasil",
+      "Software Engineer",
       "Especialista e-commerce",
       "Vue, Angular, React",
       "HTML5, CSS3, ES6, API Rest"
@@ -22,20 +22,21 @@
   "about": {
     "title": "Sobre mim",
     "description": [
-      "Engenheiro Front-end e especialista em Vue com mais de 8 anos de experiência construindo aplicativos web com tecnologias de ponta como Nuxt, Typescript, GraphQL, Tailwind CSS e mais.",
-      "Com forte experiência em ambiente de comércio eletrônico, já trabalhei com diferentes plataformas como Magento 1 e 2, Commercetools, Prestashop, SAP Commerce, Oracle Commerce Cloud e Vtex.",
-      "Atualmente baseado em São Paulo/ Brasil, com comunicação e escrita em inglês proficientes. Estou aberto e disposto a me realocar - viajar e me conectar a novas culturas e pessoas é minha maior paixão.",
-      "Eu amo projetos de código aberto e trabalhar com equipes de ritmo acelerado. Pessoas curiosas e criativas são o que mais me inspiram."
+      "Olá! 👋 Sou o Alef, Engenheiro Full Stack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e de alta performance para empresas globais, com forte foco em arquitetura frontend e plataformas de e-commerce.",
+      "Tenho experiência prática com tecnologias modernas como Vue, React, Nuxt, TypeScript, GraphQL, Node.js, Nest.js, Tailwind CSS e arquiteturas de comércio headless. Ao longo da minha carreira, atuei amplamente em ambientes complexos de software web, integrando e escalando plataformas como Magento (1 e 2), Commercetools, SAP Commerce, Oracle Commerce Cloud, Prestashop, Shopify e VTEX.",
+      "Em diferentes projetos, ajudei equipes a melhorar performance, escalabilidade e experiência de desenvolvimento por meio do desenho de padrões reutilizáveis de frontend, otimização de estratégias de data-fetching e contribuição para projetos open source, incluindo integrações core open source na Vue Storefront utilizadas por empresas no mundo todo.",
+      "Além das habilidades técnicas, sou reconhecido pela comunicação clara, mentalidade colaborativa e capacidade de atuar em times distribuídos e de ritmo acelerado. Já trabalhei com equipes internacionais em diferentes fusos e culturas, sempre focado em gerar valor e construir soluções sustentáveis.",
+      "Atualmente estou baseado em São Paulo, Brasil, com comunicação e escrita em inglês em nível avançado, e aberto a oportunidades remotas e realocação. Tenho motivação especial por projetos que valorizam inovação, autonomia e aprendizado contínuo."
     ],
     "info": {
       "name": "Nome",
-      "valueName": "Alef Barbeli de Lima",
+      "valueName": "Alef Barbeli",
       "age": "Idade",
       "valueAge": "Anos",
       "job": "Job",
-      "valueJob": "Desenvolvedor Front-End",
+      "valueJob": "Software Engineer",
       "location": "Localidade",
-      "valueLocation": "São Paulo/ SP",
+      "valueLocation": "São Paulo, São Paulo, Brasil",
       "email": "E-mail",
       "valueEmail": "alefbarbeli{'@'}gmail.com"
     },
@@ -48,67 +49,74 @@
     },
     "experiences": [
       {
-        "name": "Saúde Trevo - Engenheiro Front-End",
-        "date": "Jul/ 2024 - Nov/ 2024",
-        "location":"São Paulo, São Paulo, Brazil - Remote",
+        "name": "Samsung SDS Latin America - Software Engineer",
+        "date": "Nov 2025 - Feb 2026",
+        "location": "São Paulo, Brasil",
+        "description": "Worked on the Integrations team within Samsung’s e-commerce area, developing and maintaining backend services and APIs responsible for connecting internal systems and third-party platforms. Built scalable services using Node.js with Nest.js and Fastify, deployed on Samsung Cloud Platform with Kubernetes, and supported observability and reliability through Elastic, ensuring stable and high-availability e-commerce integrations.  Skills: Node.js · Samsung Cloud Platform · Kubernetes · Elastic · Nest.js · Fastify",
+        "skills": []
+      },
+      {
+        "name": "270B - Full Stack Engineer",
+        "date": "May 2024 - Aug 2025",
+        "location": "Estados Unidos",
+        "description": "Acted as the sole backend engineer at the agency, responsible for the development, maintenance, and scalability of backend systems for dozens of client projects, primarily built with PHP and WordPress. Developed custom themes, plugins, and integrations, and also built bespoke applications using Laravel, handling deployments and basic Linux system administration to ensure reliability and performance across multiple client environments.",
+        "skills": []
+      },
+      {
+        "name": "Pasquali Solution - Frontend Engineer (FEBRAFAR)",
+        "date": "Jul 2023 - Mar 2024",
+        "location": "São Paulo, São Paulo, Brazil",
+        "description": "Developed an internal tool for customer base management, enabling the delivery of personalized push notifications and SMS campaigns with promotions and discount coupons. Built the frontend using Svelte, developed backend services with PHP (Laravel), and maintained a legacy system built with Vue.js and Node.js, ensuring continuity and stability of existing business-critical workflows.  Skills: Svelte · Vue.js · PHP · Laravel · Node.js",
+        "skills": []
+      },
+      {
+        "name": "Vue Storefront - Front End Engineer",
+        "date": "Jul 2021 - Jun 2023",
+        "location": "Wrocław, Dolnośląskie, Poland",
+        "description": "Worked on core open-source integrations at Vue Storefront, developing and maintaining large-scale headless e-commerce connectors. Led the implementation of the Click & Collect feature using Commercetools custom APIs, and was responsible for the Vue Storefront integration with Magento 2, establishing reusable patterns and standards adopted across multiple integrations. Built solutions using Vue, Nuxt, JavaScript, TypeScript, GraphQL and Node.js, contributing to scalable, high-quality integrations used by companies worldwide.",
+        "skills": []
+      },
+      {
+        "name": "Kovi - Front End Engineer",
+        "date": "Nov 2019 - Jun 2021",
+        "location": "São Paulo e Região, Brasil",
+        "description": "Worked on the development of Kovi Signup, a headless frontend application responsible for the end-to-end vehicle rental registration flow, including form validation, document verification, and user account creation. Built using Vue.js, Nuxt, JavaScript and TypeScript, with Vuex for state management and GraphQL as the primary interface with backend services, deployed on AWS for scalability and reliability. Also contributed to the Kovi Design System, supporting multiple web applications (and partially mobile), leading efforts to migrate from Vue 2 to Vue 3 using vue-demi and building reusable, production-grade UI components.",
+        "skills": []
+      },
+      {
+        "name": "CoreBiz - Front End Developer",
+        "date": "May 2019 - Nov 2019",
+        "location": "Barueri, São Paulo",
+        "description": "Hering E-commerce https://www.hering.com.br/ https://www.dzarm.com.br/   Using SAP Commerce as the backend, the CoreBiz agency was contracted to fully refactor the UI/UX of their frontend apps. The backend is a multistore implementation, so the refactor is aimed at all their sub-stores.",
+        "skills": []
+      },
+      {
+        "name": "Enext Consultoria - Front End Developer",
+        "date": "Jun 2018 - May 2019",
+        "location": "São Paulo e Região, Brasil",
+        "description": "Osklen E-commerce https://www.osklen.com.br  Osklen backend provider was migrated from Vtex to Oracle Commerce Cloud  ------  OnStores Marketplace  This was my first production implementation of the Nuxt framework. ON Stores is the first Marketplace in Brazil for digital services, specialized in Shopping Centers. It is an e-commerce that acts as a showcase for products from physical and virtual stores.",
+        "skills": []
+      },
+      {
+        "name": "Webstore Lojas Virtuais - Front-End Developer",
+        "date": "Sep 2016 - Jun 2018",
+        "location": "Guarulhos, São Paulo, Brazil",
+        "description": "SaaS platform in the field of e-commerce, Webstore Lojas Virtuals stands out for being a pioneer in a system rich in resources at an affordable price. In this professional experience, I had the opportunity to reach a great professional milestone: developing reliable and stable software that serves more than 1 million users a day. As the main professional in the Front-End area, I was responsible for the planning and development of a software layer that would completely replace the old system of layouts on the platform. We chose to develop a JAM Stack system, which today manages the entire View of the application in an asynchronous, scalable and highly reliable manner.",
+        "skills": []
+      },
+      {
+        "name": "Agência Creative House - Full Stack Web Developer (PHP)",
+        "date": "Sep 2014 - Apr 2016",
+        "location": "São Paulo e Região, Brasil",
         "description": "",
         "skills": []
       },
       {
-        "name": "Pasquali Solution - Engenheiro Front-End",
-        "date": "Jul/ 2023 - Mar/ 2024",
-        "location": "São Paulo, São Paulo, Brazil - Remote",
+        "name": "Estudio86 - Full Stack Web Developer (PHP)",
+        "date": "Feb 2014 - Aug 2014",
+        "location": "Guarulhos, São Paulo",
         "description": "",
         "skills": []
-      },
-      {
-        "name": "Vue Storefront - Engenheiro Front-End",
-        "date": "Jul/ 2021 - Jun/ 2023",
-        "location": "Wrocław, Dolnośląskie, Poland - Remote",
-        "description": "Como Engenheiro Front-End na Vue Storefront de julho de 2021 a junho de 2022 (remoto em Wrocław, Polônia), implementei o recurso Click and Collect na Vue Storefront utilizando APIs personalizadas do Commercetools (link). Fui responsável por todo o processo de concepção, planejamento e desenvolvimento, usando JavaScript, TypeScript, Vue, Nuxt e Vuex.\n\nTambém trabalhei na integração com o Commercetools (link), estabelecendo padrões e princípios para todas as integrações futuras da empresa, garantindo alta qualidade, eficiência e excelente experiência do usuário.",
-        "skills": ["Apollo GraphQL", "TypeScript", "Nuxt.js", "Desenvolvimento de front-end", "Magento", "commercetools", "GraphQL", "E-Commerce", "Headless", "Node.js", "Vue.js"]
-      },
-      {
-        "name": "Kovi - Engenheiro Front-End",
-        "date": "Nov/ 2019 - Jun/ 2021",
-        "location": "São Paulo e Região, Brasil - Hybrid",
-        "description": "Como Engenheiro Front-End na Kovi, trabalhei no projeto Kovi Signup (cadastro.kovi.com.br), visando simplificar o processo de cadastro para aluguel de veículos. Utilizamos JavaScript, TypeScript, Vue.js, Nuxt, Vuex e GraphQL em uma arquitetura Headless hospedada na AWS, focando na experiência do usuário com interfaces intuitivas e fluxos eficientes.\n\nTambém desenvolvi o Kovi Design System para suportar todos os aplicativos front-end da Kovi, incluindo componentes usados pela equipe Mobile. Construímos usando tecnologias avançadas, começando com Vue-Demi para migrar do Vue2 para o Vue3, e utilizamos decorators para criar um Design System complexo e funcional.",
-        "skills": ["Apollo GraphQL", "TypeScript", "Desenvolvimento de front-end", "GraphQL", "Amazon Web Services (AWS)", "Headless Framework", "Node.js", "Vue.js"]
-      },
-      {
-        "name": "Corebiz - Desenvolvedor Front-End",
-        "date": "Mai/ 2019 - Nov/ 2019",
-        "location": "Barueri, São Paulo - On-site",
-        "description": "Como Desenvolvedor Front-End na CoreBiz, participei da refatoração completa da UI/UX dos aplicativos frontend do e-commerce da Hering (hering.com.br e dzarm.com.br). Utilizando o SAP Commerce como backend em uma implementação multiloja, a refatoração foi direcionada para todas as suas sub-lojas.",
-        "skills": ["Nuxt.js", "Desenvolvimento de front-end", "E-Commerce", "Node.js", "Vue.js", "Oracle Commerce Cloud"]
-      },
-      {
-        "name": "Enext Consultoria - Desenvolvedor Front-End",
-        "date": "Jun/ 2018 - Mai/ 2019",
-        "location": "São Paulo e Região, Brasil - On-site",
-        "description": "Como Desenvolvedor Front-End na Enext Consultoria, participei da migração do backend do e-commerce da Osklen (osklen.com.br) de Vtex para Oracle Commerce Cloud.\n\n Também realizei minha primeira implementação em produção com o framework Nuxt.js no projeto OnStores Marketplace, o primeiro marketplace no Brasil para serviços digitais especializados em shopping centers, atuando como vitrine para produtos de lojas físicas e virtuais.",
-        "skills": ["Nuxt.js", "Desenvolvimento de front-end", "E-Commerce", "Node.js", "Vue.js", "Oracle Commerce Cloud"]
-      },
-      {
-        "name": "Webstore Virtual Stores - Front-End Developer",
-        "date": "Sep/ 2016 - Jun/ 2018",
-        "location": "Guarulhos, São Paulo - On-site",
-        "description": "Na Webstore Lojas Virtuais, uma plataforma SaaS pioneira em e-commerce, atuei como desenvolvedor Front-End líder. Alcancei um marco significativo ao desenvolver um software confiável e estável que atende a mais de 1 milhão de usuários diariamente. Planejei e construí um sistema JAM Stack que substituiu o antigo sistema de layouts, entregando uma visualização de aplicação assíncrona, escalável e altamente confiável.",
-        "skills": ["AngularJS", "RESTful WebServices", "JAMstack", "E-Commerce"]
-      },
-      {
-        "name": "Agência Creative House - Desenvolvedor Web Full Stack (PHP)",
-        "date": "Set/ 2014 - Abr/ 2016",
-        "location": "São Paulo e Região, Brasil - On-site",
-        "description": "Na Agência de publicidade e propaganda Creative House fui responsável pelo desenvolvimento dos produtos Web da empresa, atuando diretamente nas pesquisas e desenvolvimento de tecnologias que melhor atendessem às demandas do cliente.",
-        "skills": ["Desenvolvimento de front-end", "PHP", "WordPress"]
-      },
-      {
-        "name": "Estudio86 - Desenvolvedor Web Full Stack (PHP)",
-        "date": "Fev/ 2014 - Ago/ 2014",
-        "location": "Guarulhos, São Paulo - On-site",
-        "description": "Agência de publicidade localizada na cidade de Guarulhos, o Estudio 86 atende cliente de diversos setores. Nesta minha experiência, tive contato com desenvolvimento de web pages responsivas e adaptivas, além do desenvolvimento e manutenção de lojas virtuais.",
-        "skills": ["Desenvolvimento de front-end", "E-Commerce", "PrestaShop", "Magento", "JavaScript"]
       }
     ],
     "education": [

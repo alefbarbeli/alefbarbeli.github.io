@@ -4,6 +4,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "linkedin:sync": "node scripts/linkedin-sync.mjs",
+    "linkedin:sync:write": "node scripts/linkedin-sync.mjs --write",
     "preview": "nuxt preview",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed"
