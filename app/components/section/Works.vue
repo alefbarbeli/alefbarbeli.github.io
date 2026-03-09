@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 const { data: works } = await useAsyncData('index-blogs', () =>
-  queryCollection('blog').limit(3).all()
+  queryCollection('portfolio').limit(3).all()
 )
 if (!works.value) {
   throw createError({ statusCode: 404, statusMessage: 'blogs posts not found', fatal: true })

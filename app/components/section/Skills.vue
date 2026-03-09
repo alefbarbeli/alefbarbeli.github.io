@@ -18,9 +18,20 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
-const { data: skills } = await useFetch<string[]>('/api/sections/skills', {
-  query: computed(() => ({ locale: locale.value })),
-  watch: [locale],
-  default: () => []
+type SkillsDoc = {
+  items?: Record<string, string[]>;
+};
+
+const { data: skillsDoc } = await useAsyncData('skills-section', () =>
+  queryCollection('sections').where('section', '=', 'skills').first()
+);
+
+const skills = computed(() => {
+  const doc = skillsDoc.value as SkillsDoc | null;
+  if (!doc?.items) {
+    return [];
+  }
+
+  return doc.items[locale.value] ?? doc.items.br ?? [];
 });
 </script>
