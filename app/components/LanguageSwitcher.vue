@@ -1,5 +1,5 @@
 <template>
-  <div class="language-switcher" aria-label="Language Switcher">
+  <div class="language-switcher" :aria-label="$t('ui.languageSwitcher')">
     <template v-for="(loc, index) in locales" :key="loc.code">
       <NuxtLink
         :to="switchLocalePath(loc.code)"

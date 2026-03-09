@@ -132,3 +132,23 @@ Resolution strategy:
 - Falls back to language-level match (for example `pt` from `pt-BR`).
 - Falls back to default locale version.
 - Falls back to base/default file (no locale suffix).
+
+## i18n Hardcoded Text Lint
+
+To avoid new hardcoded UI text in Vue templates, use:
+
+```bash
+pnpm lint:i18n:text
+```
+
+This script scans `app/**/*.vue` and fails if it finds probable hardcoded captions/labels that should be translated.
+
+Script file:
+- `scripts/lint-i18n-text.sh`
+
+Current behavior:
+- Checks visible text nodes and common attributes like `aria-label` and `data-text`.
+- Ignores allowlisted intentional values (for example brand name, separators, URLs/icons).
+
+If you get false positives, update the allowlist patterns in:
+- `scripts/lint-i18n-text.sh`

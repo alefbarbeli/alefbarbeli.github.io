@@ -1,12 +1,31 @@
 {
   "home": {
     "items": [
-      "São Paulo, São Paulo, Brasil",
-      "Software Engineer",
-      "Especialista e-commerce",
-      "Vue, Angular, React",
-      "HTML5, CSS3, ES6, API Rest"
+      "De São Paulo para produtos com impacto global",
+      "Engenheiro Full Stack Sênior com alma frontend",
+      "Transformando e-commerce complexo em experiência fluida",
+      "Vue, Nuxt, React e arquitetura que escala de verdade",
+      "Código que entrega rápido, evolui bem e converte"
     ]
+  },
+  "nav": {
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
+  "ui": {
+    "scrollDown": "Rolar para baixo",
+    "toggleMenu": "Alternar menu",
+    "languageSwitcher": "Alternador de idioma",
+    "githubProfile": "Perfil do GitHub",
+    "linkedinProfile": "Perfil do LinkedIn"
+  },
+  "contact": {
+    "title": "Contato",
+    "phoneLabel": "Telefone / WhatsApp",
+    "emailLabel": "E-mail"
+  },
+  "skills": {
+    "title": "Habilidades"
   },
   "portfolio": {
     "title": "Portfólio",
@@ -23,7 +42,7 @@
     "title": "Sobre mim",
     "description": [
       "Olá! 👋 Sou o Alef, Engenheiro Full Stack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e de alta performance para empresas globais, com forte foco em arquitetura frontend e plataformas de e-commerce.",
-      "Tenho experiência prática com tecnologias modernas como Vue, React, Nuxt, TypeScript, GraphQL, Node.js, Nest.js, Tailwind CSS e arquiteturas de comércio headless. Ao longo da minha carreira, atuei amplamente em ambientes complexos de software web, integrando e escalando plataformas como Magento (1 e 2), Commercetools, SAP Commerce, Oracle Commerce Cloud, Prestashop, Shopify e VTEX.",
+      "Tenho experiência prática com tecnologias modernas como Vue, React, Nuxt, TypeScript, GraphQL, Node.js, Nest.js, Tailwind CSS e arquiteturas de headless commerce. Ao longo da minha carreira, atuei amplamente em ambientes complexos de software web, integrando e escalando plataformas como Magento (1 e 2), Commercetools, SAP Commerce, Oracle Commerce Cloud, Prestashop, Shopify e VTEX.",
       "Em diferentes projetos, ajudei equipes a melhorar performance, escalabilidade e experiência de desenvolvimento por meio do desenho de padrões reutilizáveis de frontend, otimização de estratégias de data-fetching e contribuição para projetos open source, incluindo integrações core open source na Vue Storefront utilizadas por empresas no mundo todo.",
       "Além das habilidades técnicas, sou reconhecido pela comunicação clara, mentalidade colaborativa e capacidade de atuar em times distribuídos e de ritmo acelerado. Já trabalhei com equipes internacionais em diferentes fusos e culturas, sempre focado em gerar valor e construir soluções sustentáveis.",
       "Atualmente estou baseado em São Paulo, Brasil, com comunicação e escrita em inglês em nível avançado, e aberto a oportunidades remotas e realocação. Tenho motivação especial por projetos que valorizam inovação, autonomia e aprendizado contínuo."

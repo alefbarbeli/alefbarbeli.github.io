@@ -2,7 +2,7 @@
   <div id="skills" class="section skills">
     <div class="content">
       <div class="title">
-        <div class="title_inner">Skills</div>
+        <div class="title_inner">{{ $t('skills.title') }}</div>
       </div>
       <div class="skills">
         <ul>

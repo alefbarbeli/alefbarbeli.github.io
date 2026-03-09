@@ -1,12 +1,31 @@
 {
   "home": {
     "items": [
-      "São Paulo, São Paulo, Brasil",
-      "Software Engineer",
-      "E-commerce Specialist",
-      "Vue, Angular, React",
-      "HTML5, CSS3, ES6, Rest API"
+      "Based in São Paulo, building for the world",
+      "Senior Full Stack Engineer with frontend DNA",
+      "Turning complex commerce into smooth journeys",
+      "Vue, Nuxt, React and architecture that scales",
+      "Code that ships fast, ages well, and converts"
     ]
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "ui": {
+    "scrollDown": "Scroll down",
+    "toggleMenu": "Toggle menu",
+    "languageSwitcher": "Language switcher",
+    "githubProfile": "GitHub profile",
+    "linkedinProfile": "LinkedIn profile"
+  },
+  "contact": {
+    "title": "Contact",
+    "phoneLabel": "Phone / WhatsApp",
+    "emailLabel": "Email"
+  },
+  "skills": {
+    "title": "Skills"
   },
   "portfolio": {
     "title": "Portfolio",

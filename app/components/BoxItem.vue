@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
+const withBaseAsset = useBaseAsset();
 
 defineProps({
   item: {
@@ -14,6 +15,7 @@ const getLocalizedItemPath = (item: Record<string, any>) => {
   const rawPath = getItemPath(item);
   return rawPath ? localePath(rawPath) : null;
 };
+const getItemImage = (item: Record<string, any>) => withBaseAsset(item.meta?.image || item.image || '');
 </script>
 
 <template>
@@ -21,9 +23,9 @@ const getLocalizedItemPath = (item: Record<string, any>) => {
     <div class="box-content">
       <div class="image">
         <NuxtLink v-if="getLocalizedItemPath(item)" :to="getLocalizedItemPath(item)">
-          <img :alt="item.title" :src="item.meta?.image || item.image">
+          <img :alt="item.title" :src="getItemImage(item)">
         </NuxtLink>
-        <img v-else :alt="item.title" :src="item.meta?.image || item.image">
+        <img v-else :alt="item.title" :src="getItemImage(item)">
       </div>
       <div class="desc">
         <div class="category">{{ item.category || item.meta?.category }}</div>

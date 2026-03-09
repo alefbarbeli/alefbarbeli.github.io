@@ -23,13 +23,14 @@
 
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/vue';
+const withBaseAsset = useBaseAsset();
 
 useSeoMeta({
   title: 'Alef Barbeli, Front-end Developer',
   ogTitle: 'Alef Barbeli, Front-end Developer',
   description: 'Portfolio and Resume of Alef Barbeli, Front-end Developer',
   ogDescription: 'Portfolio and Resume of Alef Barbeli, Front-end Developer',
-  ogImage: '/profile.jpg',
+  ogImage: withBaseAsset('/profile.jpg'),
   twitterCard: 'summary_large_image',
   charset: 'utf-8',
   viewport: 'width=device-width, initial-scale=1',

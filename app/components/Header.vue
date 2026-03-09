@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="head-top">
-      <a aria-label="Toggle menu" class="menu-btn" href="#">
+      <a :aria-label="$t('ui.toggleMenu')" class="menu-btn" href="#">
         <span></span>
       </a>
       <div class="top-menu">
@@ -10,16 +10,16 @@
             <NuxtLink class="lnk" :to="localePath('/')">Alef</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" :to="localePath('/portfolio')">Portfolio</NuxtLink>
+            <NuxtLink class="lnk" :to="localePath('/portfolio')">{{ $t('nav.portfolio') }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" :to="localePath('/contato')">Contato</NuxtLink>
+            <NuxtLink class="lnk" :to="localePath('/contato')">{{ $t('nav.contact') }}</NuxtLink>
           </li>
           <li class="lang-item">
             <LanguageSwitcher />
           </li>
           <li>
-            <NuxtLink class="btn" external target="_blank" to="/resume-en.pdf">Download CV</NuxtLink>
+            <a class="btn" target="_blank" rel="noopener noreferrer" :href="resumeUrl">{{ $t('about.downloadCV') }}</a>
           </li>
         </ul>
       </div>
@@ -29,4 +29,6 @@
 </template>
 <script lang="ts" setup>
 const localePath = useLocalePath();
+const withBaseAsset = useBaseAsset();
+const resumeUrl = computed(() => withBaseAsset('/resume-en.pdf'));
 </script>

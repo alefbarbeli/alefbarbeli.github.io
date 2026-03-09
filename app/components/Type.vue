@@ -12,12 +12,22 @@ const props = defineProps({
 
 const typing = ref('');
 let timerId = null;
+let runId = 0;
+
+const clearTypingTimer = () => {
+  if (timerId) {
+    clearTimeout(timerId);
+    timerId = null;
+  }
+};
 
 const onInit = () => {
-  const items = props.items;
+  const currentRunId = ++runId;
+  const items = Array.isArray(props.items) ? props.items : [];
+  clearTypingTimer();
+  typing.value = '';
 
   if (!items.length) {
-    typing.value = '';
     return;
   }
 
@@ -27,7 +37,10 @@ const onInit = () => {
   let isReverse = false;
 
   const schedule = (callback, delay) => {
-    timerId = setTimeout(callback, delay);
+    timerId = setTimeout(() => {
+      if (currentRunId !== runId) return;
+      callback();
+    }, delay);
   };
 
   const typingEffect = () => {
@@ -67,10 +80,17 @@ onMounted(() => {
   onInit();
 });
 
+watch(
+  () => props.items,
+  () => {
+    onInit();
+  },
+  { deep: true }
+);
+
 onBeforeUnmount(() => {
-  if (timerId) {
-    clearTimeout(timerId);
-  }
+  clearTypingTimer();
+  runId++;
 });
 </script>
 

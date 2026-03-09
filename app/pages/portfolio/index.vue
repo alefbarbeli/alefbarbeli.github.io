@@ -6,7 +6,7 @@
         <p><NuxtLink :to="localePath('/')">{{ $t('portfolio.breadcrumbHome') }}</NuxtLink> / <NuxtLink :to="localePath('/portfolio')">{{ $t('portfolio.title') }}</NuxtLink></p>
       </div>
       <span class="typed-bread"></span>
-      <a href="#works" class="mouse_btn" aria-label="Scroll down">
+      <a href="#works" class="mouse_btn" :aria-label="$t('ui.scrollDown')">
         <span class="ion ion-mouse"></span>
       </a>
     </div>

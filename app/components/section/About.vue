@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const birthDate = new Date('1994-01-11');
+const withBaseAsset = useBaseAsset();
+const resumeUrl = computed(() => withBaseAsset('/resume-en.pdf'));
 const currentAge = computed(() => {
   const today = new Date();
   let age = today.getFullYear() - birthDate.getFullYear();
@@ -49,9 +51,9 @@ const currentAge = computed(() => {
           </ul>
         </div>
         <div class="bts">
-          <NuxtLink class="btn fill" external target="_blank" to="/resume-en.pdf">
+          <a class="btn fill" target="_blank" rel="noopener noreferrer" :href="resumeUrl">
             {{ $t('about.downloadCV') }}
-          </NuxtLink>
+          </a>
         </div>
       </div>
       <div class="clear"></div>

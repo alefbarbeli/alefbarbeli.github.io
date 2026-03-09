@@ -6,6 +6,7 @@ import {
 const route = useRoute();
 const { locale, locales, defaultLocale } = useI18n();
 const localePath = useLocalePath();
+const withBaseAsset = useBaseAsset();
 
 const slug = computed(() => String(route.params.slug || ''));
 
@@ -28,10 +29,10 @@ if (!contentDoc.value) {
 useSeoMeta({
   title: () => `${contentDoc.value?.title || 'Portfolio'} - Alef Barbeli`,
   description: () => String(contentDoc.value?.description || ''),
-  ogImage: () => String(contentDoc.value?.meta?.image || contentDoc.value?.image || '/profile.jpg')
+  ogImage: () => String(withBaseAsset(contentDoc.value?.meta?.image || contentDoc.value?.image || '/profile.jpg'))
 });
 
-const image = computed(() => contentDoc.value?.image || contentDoc.value?.meta?.image || '/profile.jpg');
+const image = computed(() => withBaseAsset(contentDoc.value?.image || contentDoc.value?.meta?.image || '/profile.jpg'));
 const category = computed(() => contentDoc.value?.category || contentDoc.value?.meta?.category);
 const stack = computed(() => contentDoc.value?.stack || contentDoc.value?.meta?.stack);
 const tags = computed(() => contentDoc.value?.tags || contentDoc.value?.meta?.tags || []);
@@ -48,7 +49,7 @@ const tags = computed(() => contentDoc.value?.tags || contentDoc.value?.meta?.ta
         </p>
       </div>
       <span class="typed-bread"></span>
-      <a href="#contact" class="mouse_btn" aria-label="Scroll down">
+      <a href="#contact" class="mouse_btn" :aria-label="$t('ui.scrollDown')">
         <span class="ion ion-mouse"></span>
       </a>
     </div>

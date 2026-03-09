@@ -2,19 +2,19 @@
   <div class="section contacts">
     <div class="content">
       <div class="title">
-        <div class="title_inner">Contato</div>
+        <div class="title_inner">{{ $t('contact.title') }}</div>
       </div>
       <div class="service-items">
         <div class="service-item">
           <div class="icon"><span class="ion ion-android-phone-portrait"></span></div>
-          <div class="name">Telefone/ WhatsApp</div>
+          <div class="name">{{ $t('contact.phoneLabel') }}</div>
           <p>
             +55 (11)94426-4284
           </p>
         </div>
         <div class="service-item">
           <div class="icon"><span class="ion ion-email"></span></div>
-          <div class="name">Email</div>
+          <div class="name">{{ $t('contact.emailLabel') }}</div>
           <p>
             <a href="mailto:alefbarbeli@gmail.com">alefbarbeli@gmail.com</a>
           </p>
