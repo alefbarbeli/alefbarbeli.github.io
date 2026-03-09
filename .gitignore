@@ -1,0 +1,13 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.idea
+.cache
+.env
+.data
+.playwright-cli
+.pnpm-store
+dist
+/.output/
+scripts/.linkedin-sync.latest.json

@@ -1,0 +1,169 @@
+{
+  "home": {
+    "items": [
+      "De São Paulo para produtos com impacto global",
+      "Engenheiro Full Stack Sênior com alma frontend",
+      "Transformando e-commerce complexo em experiência fluida",
+      "Vue, Nuxt, React e arquitetura que escala de verdade",
+      "Código que entrega rápido, evolui bem e converte"
+    ]
+  },
+  "nav": {
+    "portfolio": "Portfólio",
+    "contact": "Contato"
+  },
+  "ui": {
+    "scrollDown": "Rolar para baixo",
+    "toggleMenu": "Alternar menu",
+    "languageSwitcher": "Alternador de idioma",
+    "githubProfile": "Perfil do GitHub",
+    "linkedinProfile": "Perfil do LinkedIn"
+  },
+  "contact": {
+    "title": "Contato",
+    "phoneLabel": "Telefone / WhatsApp",
+    "emailLabel": "E-mail"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "breadcrumbHome": "Início",
+    "featuredCases": "Cases de Destaque",
+    "viewDetails": "Ler Case",
+    "viewProject": "Ver Projeto",
+    "noResults": "Nenhum projeto encontrado para este filtro.",
+    "filters": {
+      "all": "Todos"
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "description": [
+      "Olá! 👋 Sou o Alef, Engenheiro Full Stack Sênior com mais de 10 anos de experiência na construção de aplicações web escaláveis e de alta performance para empresas globais, com forte foco em arquitetura frontend e plataformas de e-commerce.",
+      "Tenho experiência prática com tecnologias modernas como Vue, React, Nuxt, TypeScript, GraphQL, Node.js, Nest.js, Tailwind CSS e arquiteturas de headless commerce. Ao longo da minha carreira, atuei amplamente em ambientes complexos de software web, integrando e escalando plataformas como Magento (1 e 2), Commercetools, SAP Commerce, Oracle Commerce Cloud, Prestashop, Shopify e VTEX.",
+      "Em diferentes projetos, ajudei equipes a melhorar performance, escalabilidade e experiência de desenvolvimento por meio do desenho de padrões reutilizáveis de frontend, otimização de estratégias de data-fetching e contribuição para projetos open source, incluindo integrações core open source na Vue Storefront utilizadas por empresas no mundo todo.",
+      "Além das habilidades técnicas, sou reconhecido pela comunicação clara, mentalidade colaborativa e capacidade de atuar em times distribuídos e de ritmo acelerado. Já trabalhei com equipes internacionais em diferentes fusos e culturas, sempre focado em gerar valor e construir soluções sustentáveis.",
+      "Atualmente estou baseado em São Paulo, Brasil, com comunicação e escrita em inglês em nível avançado, e aberto a oportunidades remotas e realocação. Tenho motivação especial por projetos que valorizam inovação, autonomia e aprendizado contínuo."
+    ],
+    "info": {
+      "name": "Nome",
+      "valueName": "Alef Barbeli",
+      "age": "Idade",
+      "valueAge": "Anos",
+      "job": "Job",
+      "valueJob": "Software Engineer",
+      "location": "Localidade",
+      "valueLocation": "São Paulo, São Paulo, Brasil",
+      "email": "E-mail",
+      "valueEmail": "alefbarbeli{'@'}gmail.com"
+    },
+    "downloadCV": "Baixar CV"
+  },
+  "resume": {
+    "sections": {
+      "experience": "Experiências Relevantes",
+      "education": "Educação"
+    },
+    "experiences": [
+      {
+        "name": "Samsung SDS Latin America - Software Engineer",
+        "date": "Nov 2025 - Feb 2026",
+        "location": "São Paulo, Brasil",
+        "description": "Worked on the Integrations team within Samsung’s e-commerce area, developing and maintaining backend services and APIs responsible for connecting internal systems and third-party platforms. Built scalable services using Node.js with Nest.js and Fastify, deployed on Samsung Cloud Platform with Kubernetes, and supported observability and reliability through Elastic, ensuring stable and high-availability e-commerce integrations.  Skills: Node.js · Samsung Cloud Platform · Kubernetes · Elastic · Nest.js · Fastify",
+        "skills": []
+      },
+      {
+        "name": "270B - Full Stack Engineer",
+        "date": "May 2024 - Aug 2025",
+        "location": "Estados Unidos",
+        "description": "Acted as the sole backend engineer at the agency, responsible for the development, maintenance, and scalability of backend systems for dozens of client projects, primarily built with PHP and WordPress. Developed custom themes, plugins, and integrations, and also built bespoke applications using Laravel, handling deployments and basic Linux system administration to ensure reliability and performance across multiple client environments.",
+        "skills": []
+      },
+      {
+        "name": "Pasquali Solution - Frontend Engineer (FEBRAFAR)",
+        "date": "Jul 2023 - Mar 2024",
+        "location": "São Paulo, São Paulo, Brazil",
+        "description": "Developed an internal tool for customer base management, enabling the delivery of personalized push notifications and SMS campaigns with promotions and discount coupons. Built the frontend using Svelte, developed backend services with PHP (Laravel), and maintained a legacy system built with Vue.js and Node.js, ensuring continuity and stability of existing business-critical workflows.  Skills: Svelte · Vue.js · PHP · Laravel · Node.js",
+        "skills": []
+      },
+      {
+        "name": "Vue Storefront - Front End Engineer",
+        "date": "Jul 2021 - Jun 2023",
+        "location": "Wrocław, Dolnośląskie, Poland",
+        "description": "Worked on core open-source integrations at Vue Storefront, developing and maintaining large-scale headless e-commerce connectors. Led the implementation of the Click & Collect feature using Commercetools custom APIs, and was responsible for the Vue Storefront integration with Magento 2, establishing reusable patterns and standards adopted across multiple integrations. Built solutions using Vue, Nuxt, JavaScript, TypeScript, GraphQL and Node.js, contributing to scalable, high-quality integrations used by companies worldwide.",
+        "skills": []
+      },
+      {
+        "name": "Kovi - Front End Engineer",
+        "date": "Nov 2019 - Jun 2021",
+        "location": "São Paulo e Região, Brasil",
+        "description": "Worked on the development of Kovi Signup, a headless frontend application responsible for the end-to-end vehicle rental registration flow, including form validation, document verification, and user account creation. Built using Vue.js, Nuxt, JavaScript and TypeScript, with Vuex for state management and GraphQL as the primary interface with backend services, deployed on AWS for scalability and reliability. Also contributed to the Kovi Design System, supporting multiple web applications (and partially mobile), leading efforts to migrate from Vue 2 to Vue 3 using vue-demi and building reusable, production-grade UI components.",
+        "skills": []
+      },
+      {
+        "name": "CoreBiz - Front End Developer",
+        "date": "May 2019 - Nov 2019",
+        "location": "Barueri, São Paulo",
+        "description": "Hering E-commerce https://www.hering.com.br/ https://www.dzarm.com.br/   Using SAP Commerce as the backend, the CoreBiz agency was contracted to fully refactor the UI/UX of their frontend apps. The backend is a multistore implementation, so the refactor is aimed at all their sub-stores.",
+        "skills": []
+      },
+      {
+        "name": "Enext Consultoria - Front End Developer",
+        "date": "Jun 2018 - May 2019",
+        "location": "São Paulo e Região, Brasil",
+        "description": "Osklen E-commerce https://www.osklen.com.br  Osklen backend provider was migrated from Vtex to Oracle Commerce Cloud  ------  OnStores Marketplace  This was my first production implementation of the Nuxt framework. ON Stores is the first Marketplace in Brazil for digital services, specialized in Shopping Centers. It is an e-commerce that acts as a showcase for products from physical and virtual stores.",
+        "skills": []
+      },
+      {
+        "name": "Webstore Lojas Virtuais - Front-End Developer",
+        "date": "Sep 2016 - Jun 2018",
+        "location": "Guarulhos, São Paulo, Brazil",
+        "description": "SaaS platform in the field of e-commerce, Webstore Lojas Virtuals stands out for being a pioneer in a system rich in resources at an affordable price. In this professional experience, I had the opportunity to reach a great professional milestone: developing reliable and stable software that serves more than 1 million users a day. As the main professional in the Front-End area, I was responsible for the planning and development of a software layer that would completely replace the old system of layouts on the platform. We chose to develop a JAM Stack system, which today manages the entire View of the application in an asynchronous, scalable and highly reliable manner.",
+        "skills": []
+      },
+      {
+        "name": "Agência Creative House - Full Stack Web Developer (PHP)",
+        "date": "Sep 2014 - Apr 2016",
+        "location": "São Paulo e Região, Brasil",
+        "description": "",
+        "skills": []
+      },
+      {
+        "name": "Estudio86 - Full Stack Web Developer (PHP)",
+        "date": "Feb 2014 - Aug 2014",
+        "location": "Guarulhos, São Paulo",
+        "description": "",
+        "skills": []
+      }
+    ],
+    "education": [
+      {
+        "date": "2018 - 2022",
+        "name": "Engenharia da Computação - UNIVESP",
+        "description": "Atualmente cursando, tenho como objetivo com essa graduação alcançar o título de Engenheiro de Software."
+      }
+    ]
+  },
+  "services": {
+    "title": "Serviços",
+    "items": [
+      {
+        "icon": "ion ion-social-chrome",
+        "name": "Otimização de SEO",
+        "description": "Otimização de sites à nivel de código para otimização no ranqueamento de pesquisas, visando performance e qualidade."
+      },
+      {
+        "icon": "ion ion-ipad",
+        "name": "Mobile",
+        "description": "Otimização de websites para melhor aproveitamento e apresentação em dispositivos mobile."
+      },
+      {
+        "icon": "ion ion-code",
+        "name": "Lojas Virtuais",
+        "description": "Foco na conversão com estudo avançado de User Experience."
+      }
+    ]
+  }
+}

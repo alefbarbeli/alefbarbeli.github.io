@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "linkedin:sync": "node scripts/linkedin-sync.mjs",
+    "linkedin:sync:write": "node scripts/linkedin-sync.mjs --write",
+    "preview": "nuxt preview",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "lint:i18n:text": "bash scripts/lint-i18n-text.sh"
+  },
+  "devDependencies": {
+    "@nuxt/content": "3.11.2",
+    "@nuxt/image": "^2.0.0",
+    "@nuxt/scripts": "^0.13.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^10.1.0",
+    "@playwright/test": "^1.58.2",
+    "nuxt": "^4.1.2",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
+    "better-sqlite3": "^12.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  },
+  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017"
+}
