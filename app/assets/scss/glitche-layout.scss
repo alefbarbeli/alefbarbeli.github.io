@@ -163,7 +163,7 @@ header .head-top .top-menu ul li.active .btn {
 /* 2. Section */
 .section {
   position: relative;
-  padding: 40px 20px 80px;
+  // padding: 40px 20px 80px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -173,11 +173,11 @@ header .head-top .top-menu ul li.active .btn {
   -o-transition: all 0.6s ease 0s;
 
   @media (min-width: 768px) {
-    padding: 40px 40px 80px;
+    // padding: 40px 40px 80px;
   }
 
   @media (min-width: 1024px) {
-    padding: 40px 80px 110px;
+    // padding: 40px 80px 110px;
   }
 }
 
@@ -186,18 +186,22 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
   margin: 0 auto;
   width: 100%;
+  background-color: rgb(0 0 0 / 50%);
+  padding: 1rem;
 
   @media (min-width: 640px) {
     max-width: 640px;
   }
   @media (min-width: 768px) {
    max-width: 768px;
+   padding: 2rem;
   }
   @media (min-width: 1024px) {
    max-width: 1024px;
   }
   @media (min-width: 1280px) {
    max-width: 1280px;
+    padding: 4rem;
   }
 }
 

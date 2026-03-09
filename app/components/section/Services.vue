@@ -28,7 +28,7 @@ export default defineComponent({
             :key="index"
         >
           <div class="icon">
-            <span :class="$rt(item.icon)"></span>
+            <Icon class="ion" :name="$rt(item.icon)" size="30" />
           </div>
           <div class="name">{{ $rt(item.name) }}</div>
           <p>{{ $rt(item.description) }}</p>

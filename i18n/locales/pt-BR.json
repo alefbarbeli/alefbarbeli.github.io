@@ -22,7 +22,19 @@
   "contact": {
     "title": "Contato",
     "phoneLabel": "Telefone / WhatsApp",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "form": {
+      "namePlaceholder": "Seu nome",
+      "emailPlaceholder": "Seu e-mail",
+      "messagePlaceholder": "Sua mensagem",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Obrigado! Sua mensagem foi enviada.",
+      "error": "Não foi possível enviar sua mensagem agora. Tente novamente.",
+      "validationRequired": "Preencha nome, e-mail e mensagem.",
+      "validationEmail": "Informe um e-mail válido.",
+      "klaviyoMissingConfig": "Formulário temporariamente indisponível."
+    }
   },
   "skills": {
     "title": "Habilidades"
@@ -150,17 +162,17 @@
     "title": "Serviços",
     "items": [
       {
-        "icon": "ion ion-social-chrome",
+        "icon": "lucide:search",
         "name": "Otimização de SEO",
         "description": "Otimização de sites à nivel de código para otimização no ranqueamento de pesquisas, visando performance e qualidade."
       },
       {
-        "icon": "ion ion-ipad",
+        "icon": "lucide:smartphone",
         "name": "Mobile",
         "description": "Otimização de websites para melhor aproveitamento e apresentação em dispositivos mobile."
       },
       {
-        "icon": "ion ion-code",
+        "icon": "lucide:code-2",
         "name": "Lojas Virtuais",
         "description": "Foco na conversão com estudo avançado de User Experience."
       }

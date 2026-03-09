@@ -98,7 +98,7 @@ onBeforeUnmount(() => {
 p {
   color: #f1f1f1;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 200;
   line-height: 30px;
   height: 30px;
   padding: 0;

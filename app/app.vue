@@ -17,12 +17,20 @@
 
     </div>
 
-    <SpeedInsights />
+    <component :is="SpeedInsightsComponent" v-if="enableSpeedInsights" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { SpeedInsights } from '@vercel/speed-insights/vue';
+import { defineAsyncComponent } from 'vue';
+
+const runtimeConfig = useRuntimeConfig();
+const enableSpeedInsights = computed(() => String(runtimeConfig.public.enableSpeedInsights || '') === 'true');
+const SpeedInsightsComponent = defineAsyncComponent(async () => {
+  const mod = await import('@vercel/speed-insights/vue');
+  return mod.SpeedInsights;
+});
+
 const withBaseAsset = useBaseAsset();
 
 useSeoMeta({
@@ -143,6 +151,15 @@ useSeoMeta({
   }
   100% {
     background-position: 0 50%
+  }
+}
+
+@media (prefers-reduced-motion: reduce), (max-width: 768px) {
+  .container:before {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    background-position: 50% 50%;
   }
 }
 </style>

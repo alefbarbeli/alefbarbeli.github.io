@@ -22,7 +22,19 @@
   "contact": {
     "title": "Contact",
     "phoneLabel": "Phone / WhatsApp",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "messagePlaceholder": "Your message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent.",
+      "error": "We couldn't send your message right now. Please try again.",
+      "validationRequired": "Please fill in name, email and message.",
+      "validationEmail": "Please enter a valid email address.",
+      "klaviyoMissingConfig": "Form is temporarily unavailable."
+    }
   },
   "skills": {
     "title": "Skills"
@@ -150,17 +162,17 @@
     "title": "Services",
     "items": [
       {
-        "icon": "ion ion-social-chrome",
+        "icon": "lucide:search",
         "name": "SEO Optimization",
         "description": "Website code-level optimization for better search ranking, aiming for performance and quality."
       },
       {
-        "icon": "ion ion-ipad",
+        "icon": "lucide:smartphone",
         "name": "Mobile",
         "description": "Optimizing websites for better usability and presentation on mobile devices."
       },
       {
-        "icon": "ion ion-code",
+        "icon": "lucide:code-2",
         "name": "Online Stores",
         "description": "Focus on conversion with advanced User Experience studies."
       }

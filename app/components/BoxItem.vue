@@ -23,9 +23,24 @@ const getItemImage = (item: Record<string, any>) => withBaseAsset(item.meta?.ima
     <div class="box-content">
       <div class="image">
         <NuxtLink v-if="getLocalizedItemPath(item)" :to="getLocalizedItemPath(item)">
-          <img :alt="item.title" :src="getItemImage(item)">
+          <NuxtImg
+            :alt="item.title"
+            :src="getItemImage(item)"
+            sizes="(max-width: 580px) 100vw, 50vw"
+            format="webp"
+            loading="lazy"
+            decoding="async"
+          />
         </NuxtLink>
-        <img v-else :alt="item.title" :src="getItemImage(item)">
+        <NuxtImg
+          v-else
+          :alt="item.title"
+          :src="getItemImage(item)"
+          sizes="(max-width: 580px) 100vw, 50vw"
+          format="webp"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <div class="desc">
         <div class="category">{{ item.category || item.meta?.category }}</div>

@@ -8,7 +8,7 @@
           </div>
           <span class="typed-bread"></span>
           <a href="#contact" class="mouse_btn" :aria-label="$t('ui.scrollDown')">
-            <span class="ion ion-mouse"></span>
+            <Icon class="ion" name="lucide:mouse" />
           </a>
         </div>
 
