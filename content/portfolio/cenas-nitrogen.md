@@ -1,7 +1,7 @@
 ---
 title: 'CENAS x NITROGEN'
 category: 'Code'
-image: '/images/works/work7.jpg'
+image: '/images/works/cenas.png'
 description: 'Headless Shopify storefront em Nuxt 4 com arquitetura Nitrogen, foco em performance, SEO técnico e engenharia escalável.'
 projectUrl: 'https://cenas.com.br/'
 stack: 'Nuxt 4 + Shopify Storefront API + TypeScript + GraphQL'
