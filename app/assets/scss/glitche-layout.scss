@@ -468,6 +468,11 @@ header .head-top .top-menu ul li.active .btn {
   color: white;
   background-color: rgba(0,0,0,0.3);
   border: 1px solid #e84a5f;
+  transition: all 300ms;
+}
+.item-heading:hover {
+    background-color: black;
+    box-shadow: -4px 4px 0px #ffffff, -2px 2px 0px #ffffff;
 }
 
 .resume-items .resume-item .name {

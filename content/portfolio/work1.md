@@ -1,15 +1,15 @@
 ---
-title: 'Canvas Tote Bag MockUp'
+title: 'Athleisure Landing Mockup'
 category: 'Mockups'
 image: '/images/works/work1.jpg'
-description: 'Redesign completo de produto com foco em conversao, microinteracoes e pagina de detalhes otimizada para mobile-first.'
-projectUrl: 'https://example.com/canvas-tote'
-stack: 'Vue.js + Rest API + Headless CMS'
+description: 'Conceito visual para campanha de moda esportiva com foco em narrativa de marca, blocos editoriais e hierarquia de CTA para mobile e desktop.'
+projectUrl: 'https://example.com/athleisure-landing-mockup'
+stack: 'Figma + Design System + Prototipacao'
 tags:
-  - Vue.js
-  - API
-  - Headless CMS
-  - UX
+  - Figma
+  - UI Design
+  - Mockup
+  - Landing Page
 date: '2025-05-18'
 featured: true
 ---

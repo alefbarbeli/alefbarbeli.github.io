@@ -8,6 +8,17 @@
       "HTML5, CSS3, ES6, API Rest"
     ]
   },
+  "portfolio": {
+    "title": "Portfólio",
+    "breadcrumbHome": "Início",
+    "featuredCases": "Cases de Destaque",
+    "viewDetails": "Ler Case",
+    "viewProject": "Ver Projeto",
+    "noResults": "Nenhum projeto encontrado para este filtro.",
+    "filters": {
+      "all": "Todos"
+    }
+  },
   "about": {
     "title": "Sobre mim",
     "description": [

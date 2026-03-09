@@ -10,10 +10,10 @@
             <NuxtLink class="lnk" to="/">Alef</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" to="portfolio">Portfolio</NuxtLink>
+            <NuxtLink class="lnk" to="/portfolio">Portfolio</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="lnk" to="contato">Contato</NuxtLink>
+            <NuxtLink class="lnk" to="/contato">Contato</NuxtLink>
           </li>
           <li>
             <NuxtLink class="btn" external target="_blank" to="/resume-en.pdf">Download CV</NuxtLink>
