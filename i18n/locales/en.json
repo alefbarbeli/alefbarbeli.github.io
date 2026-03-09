@@ -22,7 +22,19 @@
   "contact": {
     "title": "Contact",
     "phoneLabel": "Phone / WhatsApp",
-    "emailLabel": "Email"
+    "emailLabel": "Email",
+    "form": {
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "messagePlaceholder": "Your message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent.",
+      "error": "We couldn't send your message right now. Please try again.",
+      "validationRequired": "Please fill in name, email and message.",
+      "validationEmail": "Please enter a valid email address.",
+      "klaviyoMissingConfig": "Form is temporarily unavailable."
+    }
   },
   "skills": {
     "title": "Skills"

@@ -22,7 +22,19 @@
   "contact": {
     "title": "Contato",
     "phoneLabel": "Telefone / WhatsApp",
-    "emailLabel": "E-mail"
+    "emailLabel": "E-mail",
+    "form": {
+      "namePlaceholder": "Seu nome",
+      "emailPlaceholder": "Seu e-mail",
+      "messagePlaceholder": "Sua mensagem",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Obrigado! Sua mensagem foi enviada.",
+      "error": "Não foi possível enviar sua mensagem agora. Tente novamente.",
+      "validationRequired": "Preencha nome, e-mail e mensagem.",
+      "validationEmail": "Informe um e-mail válido.",
+      "klaviyoMissingConfig": "Formulário temporariamente indisponível."
+    }
   },
   "skills": {
     "title": "Habilidades"

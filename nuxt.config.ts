@@ -58,6 +58,11 @@ export default defineNuxtConfig({
           id: '',
         },
       },
+      klaviyo: {
+        // .env
+        // NUXT_PUBLIC_KLAVIYO_COMPANY_ID=<your-klaviyo-site-id>
+        companyId: ''
+      }
     },
   },
 
