@@ -22,8 +22,16 @@ type SkillsDoc = {
   items?: Record<string, string[]>;
 };
 
-const { data: skillsDoc } = await useAsyncData('skills-section', () =>
-  queryCollection('sections').where('section', '=', 'skills').first()
+const { data: skillsDoc } = await useAsyncData(
+  () => `skills-section-${locale.value}`,
+  () =>
+    $fetch<SkillsDoc>('/api/sections/skills', {
+      params: { locale: locale.value }
+    }),
+  {
+    default: () => ({ items: {} }),
+    watch: [locale]
+  }
 );
 
 const skills = computed(() => {

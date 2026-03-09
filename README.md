@@ -152,3 +152,42 @@ Current behavior:
 
 If you get false positives, update the allowlist patterns in:
 - `scripts/lint-i18n-text.sh`
+
+## Performance Audits (Lighthouse)
+
+This project includes a repeatable Lighthouse workflow with local reports and deltas vs previous run.
+
+### Run full audit baseline
+
+```bash
+pnpm perf:run
+```
+
+What this does:
+- Builds the app for GitHub Pages preset
+- Serves static output on `http://127.0.0.1:4173`
+- Audits key routes with Lighthouse
+- Saves reports under `lighthouse-reports/<timestamp>/`
+- Updates:
+  - `lighthouse-reports/latest-summary.json`
+  - `lighthouse-reports/latest-summary.md`
+
+### Run only lighthouse against an already running server
+
+```bash
+pnpm perf:lighthouse
+```
+
+Custom routes/base URL:
+
+```bash
+pnpm perf:lighthouse -- --base-url http://127.0.0.1:4173 --routes /,/en,/portfolio
+```
+
+### Report files
+
+- Per-route HTML and JSON reports
+- `summary.md` with score table and route-level deltas against the previous run
+- `latest-summary.md` always points to the most recent run so comparisons are automatic on next execution
+
+Reports are ignored by git (`lighthouse-reports` in `.gitignore`) so you can compare locally over time.

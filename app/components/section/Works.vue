@@ -35,28 +35,22 @@
 </template>
 
 <script setup lang="ts">
-import { resolveLocalizedPortfolioDocs } from '~/utils/portfolio-content';
-
 type WorkItem = Record<string, any>;
 
-const { t, locale, locales, defaultLocale } = useI18n();
+const { t, locale } = useI18n();
 
 const activeCategory = ref('all');
 
-const { data: works } = await useAsyncData('portfolio-works', () =>
-  queryCollection('portfolio').all()
-);
-
-if (!works.value) {
-  throw createError({ statusCode: 404, statusMessage: 'portfolio posts not found', fatal: true });
-}
-
-const localizedWorks = computed(() =>
-  resolveLocalizedPortfolioDocs(works.value as WorkItem[], {
-    locale: String(locale.value),
-    defaultLocale: String(defaultLocale),
-    locales: locales.value as any[]
-  })
+const { data: localizedWorks } = await useAsyncData(
+  () => `portfolio-works-${locale.value}`,
+  () =>
+    $fetch<WorkItem[]>('/api/portfolio', {
+      params: { locale: locale.value }
+    }),
+  {
+    default: () => [],
+    watch: [locale]
+  }
 );
 
 const categories = computed(() => {
@@ -77,13 +71,20 @@ const categoryFilters = computed(() => [
 
 const filteredWorks = computed(() => {
   if (activeCategory.value === 'all') {
-    return localizedWorks.value;
+    return localizedWorks.value || [];
   }
 
-  return localizedWorks.value.filter((item: WorkItem) => {
+  return (localizedWorks.value || []).filter((item: WorkItem) => {
     const category = item.category ?? item.meta?.category;
     return category === activeCategory.value;
   });
+});
+
+watch(categories, (next) => {
+  if (activeCategory.value === 'all') return;
+  if (!next.includes(activeCategory.value)) {
+    activeCategory.value = 'all';
+  }
 });
 </script>
 

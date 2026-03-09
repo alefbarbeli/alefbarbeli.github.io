@@ -1,11 +1,27 @@
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/icon',
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxt/image',
-    '@nuxt/scripts',
   ],
+  icon: {
+    clientBundle: {
+      icons: [
+        'lucide:calendar-days',
+        'lucide:code-2',
+        'lucide:github',
+        'lucide:linkedin',
+        'lucide:mail',
+        'lucide:map-pin',
+        'lucide:mouse',
+        'lucide:phone',
+        'lucide:search',
+        'lucide:smartphone'
+      ]
+    }
+  },
 
   i18n: {
     defaultLocale: 'br',
@@ -46,18 +62,11 @@ export default defineNuxtConfig({
   css: [
     '~/assets/scss/glitche-basic.scss',
     '~/assets/scss/glitche-layout.scss',
-    '~/assets/scss/ionicons.scss',
   ],
 
   runtimeConfig: {
     public: {
-      scripts: {
-        googleAnalytics: {
-          // .env
-          // NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID=<your-id>
-          id: '',
-        },
-      },
+      enableSpeedInsights: false,
       klaviyo: {
         // .env
         // NUXT_PUBLIC_KLAVIYO_COMPANY_ID=<your-klaviyo-site-id>

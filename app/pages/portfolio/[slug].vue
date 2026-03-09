@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import {
-  resolveLocalizedPortfolioDocBySlug
-} from '~/utils/portfolio-content';
-
 const route = useRoute();
-const { locale, locales, defaultLocale } = useI18n();
+const { locale } = useI18n();
 const localePath = useLocalePath();
 const withBaseAsset = useBaseAsset();
 
@@ -12,13 +8,12 @@ const slug = computed(() => String(route.params.slug || ''));
 
 const { data: contentDoc } = await useAsyncData(
   () => `portfolio-doc-${slug.value}-${locale.value}`,
-  async () => {
-    const docs = await queryCollection('portfolio').all();
-    return resolveLocalizedPortfolioDocBySlug(docs as Record<string, any>[], slug.value, {
-      locale: String(locale.value),
-      defaultLocale: String(defaultLocale),
-      locales: locales.value as any[]
-    });
+  () =>
+    $fetch<Record<string, any> | null>(`/api/portfolio/${slug.value}`, {
+      params: { locale: locale.value }
+    }),
+  {
+    watch: [slug, locale]
   }
 );
 
@@ -50,7 +45,7 @@ const tags = computed(() => contentDoc.value?.tags || contentDoc.value?.meta?.ta
       </div>
       <span class="typed-bread"></span>
       <a href="#contact" class="mouse_btn" :aria-label="$t('ui.scrollDown')">
-        <span class="ion ion-mouse"></span>
+        <Icon class="ion" name="lucide:mouse" />
       </a>
     </div>
 
@@ -75,7 +70,14 @@ const tags = computed(() => contentDoc.value?.tags || contentDoc.value?.meta?.ta
         </div>
 
         <div class="post-cover">
-          <img :src="image" :alt="contentDoc?.title">
+          <NuxtImg
+            :src="image"
+            :alt="contentDoc?.title"
+            sizes="(max-width: 768px) 100vw, 920px"
+            format="webp"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
 
         <div class="post-body">

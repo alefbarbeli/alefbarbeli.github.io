@@ -11,3 +11,4 @@ node_modules
 dist
 /.output/
 scripts/.linkedin-sync.latest.json
+lighthouse-reports

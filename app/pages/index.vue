@@ -3,7 +3,7 @@
     <div class="h-title glitch-effect" data-text="Alef Barbeli"><span>Alef Barbeli</span></div>
     <Type :items="items"/>
     <a href="#about" class="mouse_btn" :aria-label="$t('ui.scrollDown')">
-      <span class="ion ion-mouse"></span>
+      <Icon class="ion" name="lucide:mouse" />
     </a>
   </div>
 

@@ -28,11 +28,11 @@ const experiences = computed(() => {
             {{ $rt(item.name) }}
           </div>
           <div v-if="item.date" class="date">
-            <span class="ion ion-calendar"></span>
+            <Icon class="ion" name="lucide:calendar-days" />
             {{ $rt(item.date) }}
           </div>
           <div v-if="item.location" class="location">
-            <span class="ion ion-location"></span>
+            <Icon class="ion" name="lucide:map-pin" />
             {{ $rt(item.location) }}
           </div>
           <p v-if="item.description">

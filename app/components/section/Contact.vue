@@ -6,14 +6,14 @@
       </div>
       <div class="service-items">
         <div class="service-item">
-          <div class="icon"><span class="ion ion-android-phone-portrait"></span></div>
+          <div class="icon"><Icon class="ion" name="lucide:phone" size="30" /></div>
           <div class="name">{{ $t('contact.phoneLabel') }}</div>
           <p>
             +55 (11)94426-4284
           </p>
         </div>
         <div class="service-item">
-          <div class="icon"><span class="ion ion-email"></span></div>
+          <div class="icon"><Icon class="ion" name="lucide:mail" size="30" /></div>
           <div class="name">{{ $t('contact.emailLabel') }}</div>
           <p>
             <a href="mailto:alefbarbeli@gmail.com">alefbarbeli@gmail.com</a>

@@ -162,17 +162,17 @@
     "title": "Services",
     "items": [
       {
-        "icon": "ion ion-social-chrome",
+        "icon": "lucide:search",
         "name": "SEO Optimization",
         "description": "Website code-level optimization for better search ranking, aiming for performance and quality."
       },
       {
-        "icon": "ion ion-ipad",
+        "icon": "lucide:smartphone",
         "name": "Mobile",
         "description": "Optimizing websites for better usability and presentation on mobile devices."
       },
       {
-        "icon": "ion ion-code",
+        "icon": "lucide:code-2",
         "name": "Online Stores",
         "description": "Focus on conversion with advanced User Experience studies."
       }

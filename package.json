@@ -9,18 +9,26 @@
     "preview": "nuxt preview",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
-    "lint:i18n:text": "bash scripts/lint-i18n-text.sh"
+    "lint:i18n:text": "bash scripts/lint-i18n-text.sh",
+    "perf:build": "nuxt build --preset github_pages",
+    "perf:serve": "node scripts/perf-static-server.mjs",
+    "perf:lighthouse": "node scripts/perf-lighthouse.mjs --base-url http://127.0.0.1:4173",
+    "perf:run": "pnpm perf:build && start-server-and-test \"pnpm perf:serve\" http://127.0.0.1:4173 \"pnpm perf:lighthouse\""
   },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.96",
     "@nuxt/content": "3.11.2",
+    "@nuxt/icon": "^2.2.1",
     "@nuxt/image": "^2.0.0",
     "@nuxt/scripts": "^0.13.2",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/i18n": "^10.1.0",
     "@playwright/test": "^1.58.2",
+    "lighthouse": "^13.0.3",
     "nuxt": "^4.1.2",
     "sass": "^1.92.1",
     "sass-loader": "^16.0.5",
+    "start-server-and-test": "^2.1.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
